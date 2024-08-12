@@ -15,7 +15,7 @@ about: # https://quarto.org/docs/websites/website-about.html
       href: https://www.linkedin.com/in/taro-mieno-65a13716/
 ---
 
-I am an Associate Professor at the Department of Agricultural Economics at the University of Nebraska Lincoln. My research interest lies in the intersection of agricultural production and natural resources management (water in particular). 
+I am an Associate Professor in the Department of Agricultural Economics at the University of Nebraska-Lincoln. My research interests focus on the intersection of agricultural production and natural resource management, with a particular emphasis on water.
 
 ## Research Expertises
 

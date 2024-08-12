@@ -3,18 +3,38 @@ project:
   output-dir: docs
 
 website:
-  title: "Home"
+  title: "Taro Mieno"
+  site-url: https://tmieno2.github.io/my-website/
   open-graph: true # https://quarto.org/docs/websites/website-tools.html#open-graph
   page-footer: "Made with Quarto"
+  # sidebar:
+  #   contents: auto
+  page-navigation: true
+  back-to-top-navigation: true
+  google-analytics: "G-XZWWMRXM72"
   navbar:
     right:
       - text: Home
         href: index.qmd
+        icon: house
       - text: Projects
         href: projects/index.qmd
-      - text: Blog
-        href: blog/index.qmd
-      - cv.qmd
+        icon: stack
+      # - text: Blog
+      #   href: blog/index.qmd
+      - text: Publications
+        href: publications/index.qmd
+        icon: book
+      - text: CV
+        href: cv.qmd
+        icon: person-gear
+    tools:
+      - icon: github
+        menu:
+          - text: Source Code
+            href:  https://github.com/tmieno2/my-website
+          - text: Report a Bug
+            href:  https://github.com/tmieno2/my-website/issues
       
 format:
   html:

@@ -1,0 +1,10 @@
+---
+title: Highlighted Publications
+listing:
+  contents: /
+  sort: "date"
+  type: default
+  categories: true
+  sort-ui: true
+  filter-ui: true
+---
