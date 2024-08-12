@@ -1,0 +1,29 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Home"
+  open-graph: true # https://quarto.org/docs/websites/website-tools.html#open-graph
+  page-footer: "Made with Quarto"
+  navbar:
+    right:
+      - text: Home
+        href: index.qmd
+      - text: Projects
+        href: projects/index.qmd
+      - text: Blog
+        href: blog/index.qmd
+      - cv.qmd
+      
+format:
+  html:
+    monobackgroundcolor: "#D4F0F9"
+    # fontcolor: black
+    mainfont: sans-serif
+    # monofont: system-ui
+    fontsize: 24px
+    # linestretch: # space between lines
+    # max-width:
+    THEME: [FLATLY, STYLES.SCSS]
+

@@ -1,0 +1,38 @@
+---
+title: "Taro Mieno"
+subtitle: "Associate Professor"
+# `profile.jpg` photo by Jan Tinneberg on https://unsplash.com
+image: headshot.jpg
+about: # https://quarto.org/docs/websites/website-about.html
+  template: jolla
+  image-shape: round
+  links:
+    - icon: github
+      text: Github
+      href: https://github.com/tmieno2
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/taro-mieno-65a13716/
+---
+
+I am an Associate Professor at the Department of Agricultural Economics at the University of Nebraska Lincoln. My research interest lies in the intersection of agricultural production and natural resources management (water in particular). 
+
+## Research Expertises
+
+Precision Agriculture
+
+Water Economics
+
+## Education
+
+University of Illinois at Urbana-Champaign \| Ph.D \| 2009 - 2014
+
+University of Illinois at Urbana-Champaign\| MS \| 2007 - 2009
+
+Hokkaido University\| BS \| 2001 - 2007
+
+## Work Experience
+
+University of Nebraska-Lincoln \| Associate Professor \| August 2020 - present
+
+University of Nebraska-Lincoln \| Assistant Professor \| August 2015 - 2020
