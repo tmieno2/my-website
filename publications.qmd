@@ -14,4 +14,4 @@ listing:
     title_with_link: Title
 ---
 
-This page presents all the peer-reviewed journal articles that I have authored or co-authored (sorted by year by default). For a full list of publications including books, blog posts, etc, please visit my google scholar page [here](https://scholar.google.com/citations?user=PxS7aU0AAAAJ).
+This page presents all the peer-reviewed journal articles that I have authored or co-authored (sorted by year by default). For a full list of publications including books, blog posts, pre-prints, etc, please visit my google scholar page [here](https://scholar.google.com/citations?user=PxS7aU0AAAAJ).

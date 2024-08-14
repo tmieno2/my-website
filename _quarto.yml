@@ -25,6 +25,9 @@ website:
       - text: Publications
         href: publications/index.qmd
         icon: book
+      - text: Teaching
+        href: teaching/index.qmd
+        icon: pencil
       - text: CV
         href: cv.qmd
         icon: person-gear
