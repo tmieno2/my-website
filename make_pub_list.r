@@ -96,7 +96,7 @@ pr_pub_data <-
   .[, title_with_link := ifelse(
     !is.na(repo_link),
     paste0(title, " ([Paper](", url, ")", ", [GitHub Repository](", repo_link, "))"),
-    paste0(title, "([Paper](", url, "))")
+    paste0(title, " ([Paper](", url, "))")
   )] %>%
   .[, .(title_with_link, year, journal)] %>%
   .[, year := as.character(year)] %>%
