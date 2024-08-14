@@ -1,4 +1,5 @@
 ---
+title: Peer-reviewed Publications
 page-layout: full
 # date-format: 'YYYY'
 listing:

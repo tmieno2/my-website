@@ -78,9 +78,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-image','listing-description','listing-categories','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-title-sort'] },{ data: ['listing-date-sort'] }],
+      valueNames: ['listing-title','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-title","listing-image","listing-description","listing-categories","listing-date"],
+      searchColumns: ["listing-title","listing-image","listing-description"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -141,7 +141,7 @@ window.Quarto = {
 <meta property="og:site_name" content="Taro Mieno">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -191,12 +191,12 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -205,7 +205,7 @@ window.Quarto = {
 
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page">
 
     
   
@@ -221,111 +221,43 @@ window.Quarto = {
 
 
 
-<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
-<div class="listing-actions-group">
-   <div class="input-group input-group-sm quarto-listing-sort">
-     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-     <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
-       <option value="" disabled="" selected="" hidden="">Order By</option>
-       <option value="index" data-direction="asc">Default</option>
-         <option value="listing-title-sort" data-direction="asc">
-          Title
-        </option>
-         <option value="listing-image" data-direction="asc">
-        </option>
-         <option value="listing-description" data-direction="asc">
-          Description
-        </option>
-         <option value="listing-categories" data-direction="asc">
-          Categories
-        </option>
-         <option value="listing-date-sort" data-direction="asc">
-          Date - Oldest
-        </option>
-         <option value="listing-date-sort" data-direction="desc">
-          Date - Newest
-        </option>
-     </select>
-  </div>
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
+<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
+<div class="list grid quarto-listing-cols-2">
+<div class="g-col-1" data-index="0">
+<a href="https://publish.illinois.edu/data-intensive-farm-managment/" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="images/trial-design.jpg" class="thumbnail-image card-img" style="height: 250px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Data Intensive Farm Management (DIFM)
+</h5>
+<div class="card-text listing-description">
+<p>This project builds cyber-infrastructure to design and conduct on-farm randomized agricultural input trials, analyze the data, and create actionable input management reports.</p>
 </div>
-<table class="quarto-listing-table table">
-<thead>
-<tr>
-<th>
-<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Title</a>
-</th>
-<th>
-<a class="sort" data-sort="listing-image" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;"> </a>
-</th>
-<th>
-<a class="sort" data-sort="listing-description" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Description</a>
-</th>
-<th>
-<a class="sort" data-sort="listing-categories" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Categories</a>
-</th>
-<th>
-<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Date</a>
-</th>
-</tr>
-</thead>
-<tbody class="list">
-<tr data-index="0" data-categories="Python,Machine Learning,Data Cleaning" data-listing-date-sort="1704096000000" data-listing-title-sort="Predicting House Prices with Machine Learning">
-<td>
-<a href="https://example.com/house-prices" class="title listing-title">Predicting House Prices with Machine Learning</a>
-</td>
-<td>
-<span class="listing-image"><img loading="lazy" src="images/breno-assis-r3WAWU5Fi5Q-unsplash.jpg" style="height: 40px;"></span>
-</td>
-<td>
-<span class="listing-description">This project involves using machine learning algorithms to predict house prices based on various features such as location, size, and amenities. It includes data cleaning, feature engineering, and model selection. </span>
-</td>
-<td>
-<span class="listing-categories">Python, Machine Learning, Data Cleaning</span>
-</td>
-<td>
-<span class="listing-date">Jan 1, 2024</span>
-</td>
-</tr>
-<tr data-index="1" data-categories="R,Machine Learning,Clustering,Statistical Modelling" data-listing-date-sort="1711954800000" data-listing-title-sort="Customer Segmentation Using Clustering Techniques">
-<td>
-<a href="https://example.com/customer-segmentation" class="title listing-title">Customer Segmentation Using Clustering Techniques</a>
-</td>
-<td>
-<span class="listing-image"><img loading="lazy" src="images/adrien-delforge-CrHG_ZYn1Dw-unsplash.jpg" style="height: 40px;"></span>
-</td>
-<td>
-<span class="listing-description">This project focuses on segmenting customers into different groups based on their purchasing behavior and demographics. It uses clustering algorithms like K-means and hierarchical clustering to identify distinct customer segments. </span>
-</td>
-<td>
-<span class="listing-categories">R, Machine Learning, Clustering, Statistical Modelling</span>
-</td>
-<td>
-<span class="listing-date">Apr 1, 2024</span>
-</td>
-</tr>
-<tr data-index="2" data-categories="R,Data Visualization,Environmental Science" data-listing-date-sort="1719817200000" data-listing-title-sort="Visualizing Global CO2 Emissions">
-<td>
-<a href="https://example.com/co2-visualization" class="title listing-title">Visualizing Global CO2 Emissions</a>
-</td>
-<td>
-<span class="listing-image"><img loading="lazy" src="images/anne-nygard-vc-vPgGqAr4-unsplash.jpg" style="height: 40px;"></span>
-</td>
-<td>
-<span class="listing-description">This project involves creating visualizations to show trends in global CO2 emissions over time. It includes data extraction from public databases, data cleaning, and using visualization libraries to create interactive charts and graphs. </span>
-</td>
-<td>
-<span class="listing-categories">R, Data Visualization, Environmental Science</span>
-</td>
-<td>
-<span class="listing-date">Jul 1, 2024</span>
-</td>
-</tr>
-</tbody>
-</table>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="1">
+<a href="https://publish.illinois.edu/data-intensive-farm-managment/" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="images/center-pivot.jpg" class="thumbnail-image card-img" style="height: 250px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Management of Groundwater for Agricultural Production
+</h5>
+<div class="card-text listing-description">
+<p>This project builds cyber-infrastructure to design and conduct on-farm randomized agricultural input trials, analyze the data, and create actionable input management reports.</p>
+</div>
+</div>
+</div>
+</a>
+</div>
+</div>
 <div class="listing-no-matching d-none">
 No matching items
 </div>
