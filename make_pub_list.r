@@ -55,20 +55,31 @@ repository_list <-
     ~keyword, ~repo_link,
     "Bias in economic", "https://github.com/tmieno2/GWR_value",
     "Aquifer depletion", "https://github.com/tmieno2/Drought-Production-Risk-Aquifer",
+    "different trial designs", "https://github.com/tmieno2/Econ_Trial_Design_PA",
+    "Causal forest approach", "https://github.com/tmieno2/CF_for_VRA"
   ) %>%
   data.table()
 
 #---------------------
 #- attach github repo link
 #---------------------
-# attach_repo_link <- function(pub_data, repository_list) {
-keyword_ls <- repository_list$keyword
-repolink_ls <- repository_list$repo_link
+attach_repo_link <- function(pub_data, repository_list) {
+  keyword_ls <- repository_list$keyword
+  repolink_ls <- repository_list$repo_link
+  pub_data_copy <- copy(pub_data)
 
-for (i in 1:length(keyword_ls)) {
-  pub_data[grepl(keyword_ls[i], title), repo_link := repolink_ls[i]]
+  for (i in 1:length(keyword_ls)) {
+    pub_data_copy[grepl(keyword_ls[i], title), repo_link := repolink_ls[i]]
+  }
+
+  num_link <- pub_data_copy[, sum(!is.na(repo_link))]
+
+  if (num_link < nrow(repository_list)){
+    print(paste0("After the match, you have only ", num_link, "repository links in the publication data after the match, while you provided ", nrow(repository_list), "links. Take a look at the keyword variable for typos and other forms of errors."))
+  }
+  
+  return(pub_data_copy)
 }
-# }
 
 #++++++++++++++++++++++++++++++++++++
 #+ Select journals
@@ -90,9 +101,12 @@ pub_urls[sapply(pub_urls, function(x) length(x) == 0L)] <- NA
 
 pub_data$url <- unlist(pub_urls)
 
+#++++++++++++++++++++++++++++++++++++
+#+
+#++++++++++++++++++++++++++++++++++++
 pr_pub_data <-
   pub_data[journal %in% pr_journal_ls, ] %>%
-  repository_list[., on = .(pubid)] %>%
+  attach_repo_link(., repository_list) %>%
   .[, title_with_link := ifelse(
     !is.na(repo_link),
     paste0(title, " ([Paper](", url, ")", ", [GitHub Repository](", repo_link, "))"),

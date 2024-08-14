@@ -82,7 +82,8 @@
   journal: Ecological Economics
 
 - title_with_link: "Causal forest approach for site-specific input management via on-farm
-  precision experimentation ([Paper](https://www.sciencedirect.com/science/article/pii/S0168169922004811))"
+  precision experimentation ([Paper](https://www.sciencedirect.com/science/article/pii/S0168169922004811),
+  [GitHub Repository](https://github.com/tmieno2/CF_for_VRA))"
   year: 2022
   journal: Computers and Electronics in Agriculture
 
@@ -102,7 +103,8 @@
   journal: Precision Agriculture
 
 - title_with_link: "The economic performances of different trial designs in on-farm
-  precision experimentation: a Monte Carlo evaluation ([Paper](https://link.springer.com/article/10.1007/s11119-023-10050-8))"
+  precision experimentation: a Monte Carlo evaluation ([Paper](https://link.springer.com/article/10.1007/s11119-023-10050-8),
+  [GitHub Repository](https://github.com/tmieno2/Econ_Trial_Design_PA))"
   year: 2023
   journal: Precision Agriculture
 
