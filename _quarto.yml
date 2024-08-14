@@ -49,5 +49,5 @@ format:
     fontsize: 24px
     # linestretch: # space between lines
     # max-width:
-    THEME: [FLATLY, STYLES.SCSS]
+    theme: [flatly, styles.scss]
 

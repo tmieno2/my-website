@@ -44,6 +44,35 @@ pub_data <-
   get_publications(id) %>%
   data.table()
 
+#++++++++++++++++++++++++++++++++++++
+#+ Github repository
+#++++++++++++++++++++++++++++++++++++
+#--- list of GitHub repository ---#
+# You need to build this yourself
+
+repository_list <-
+  tribble(
+    ~keyword, ~repo_link,
+    "Bias in economic", "https://github.com/tmieno2/GWR_value",
+    "Aquifer depletion", "https://github.com/tmieno2/Drought-Production-Risk-Aquifer",
+  ) %>%
+  data.table()
+
+#---------------------
+#- attach github repo link
+#---------------------
+# attach_repo_link <- function(pub_data, repository_list) {
+keyword_ls <- repository_list$keyword
+repolink_ls <- repository_list$repo_link
+
+for (i in 1:length(keyword_ls)) {
+  pub_data[grepl(keyword_ls[i], title), repo_link := repolink_ls[i]]
+}
+# }
+
+#++++++++++++++++++++++++++++++++++++
+#+ Select journals
+#++++++++++++++++++++++++++++++++++++
 #--- list of peer-reviewed journals ---#
 pr_journal_ls <-
   pub_data$journal %>%
@@ -63,7 +92,12 @@ pub_data$url <- unlist(pub_urls)
 
 pr_pub_data <-
   pub_data[journal %in% pr_journal_ls, ] %>%
-  .[, title_with_link := paste0("[", title, "](", url, ")")] %>%
+  repository_list[., on = .(pubid)] %>%
+  .[, title_with_link := ifelse(
+    !is.na(repo_link),
+    paste0(title, " ([Paper](", url, ")", ", [GitHub Repository](", repo_link, "))"),
+    paste0(title, "([Paper](", url, "))")
+  )] %>%
   .[, .(title_with_link, year, journal)] %>%
   .[, year := as.character(year)] %>%
   .[, title_with_link := paste0('"', title_with_link, '"')]
@@ -85,4 +119,4 @@ pub_list_in_yaml <-
   gsub("url", "  url", .) %>%
   gsub("\'", "", .)
 
-writeLines(pub_list_in_yaml, "Website/publications.yml")
+writeLines(pub_list_in_yaml, "Website/publications/publications.yml")

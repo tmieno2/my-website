@@ -1,3 +1,4 @@
 /.quarto/
 .Rproj*
 _site/*
+.DS_Store

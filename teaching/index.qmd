@@ -15,12 +15,14 @@ listing:
       target: Target Audience
 ---
 
+
+
 ## Courses at University of Nebraska-Lincoln
 
 :::{#courses}
 :::
 
-## Resources
+## Online Resources 
 
 :::{#resources}
 :::
