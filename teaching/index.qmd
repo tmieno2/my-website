@@ -1,5 +1,26 @@
 ---
-title: Teaching
 listing:
-  contents: projects.yml
+  - id: resources
+    contents: teaching.yml
+    type: table
+    sort-ui: false
+    filter-ui: false
+  - id: courses
+    contents: courses.yml
+    type: table
+    sort-ui: false
+    filter-ui: false
+    field-display-names:
+      title: Course Title
+      target: Target Audience
 ---
+
+## Courses at University of Nebraska-Lincoln
+
+:::{#courses}
+:::
+
+## Resources
+
+:::{#resources}
+:::
