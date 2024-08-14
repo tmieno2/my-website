@@ -1,9 +1,11 @@
 [
   {
+    "listing": "/publications.html",
+    "items": []
+  },
+  {
     "listing": "/publications/index.html",
-    "items": [
-      "/publications/first-post/index.html"
-    ]
+    "items": []
   },
   {
     "listing": "/projects/index.html",
@@ -12,9 +14,9 @@
   {
     "listing": "/blog/index.html",
     "items": [
-      "/blog/third-post/index.html",
       "/blog/first-post/index.html",
-      "/blog/second-post/index.html"
+      "/blog/second-post/index.html",
+      "/blog/third-post/index.html"
     ]
   }
 ]

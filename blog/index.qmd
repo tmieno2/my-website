@@ -2,7 +2,7 @@
 title: Blog
 listing:
   contents: /
-  sort: "date"
+  sort: "date desc"
   type: default
   categories: false
 ---

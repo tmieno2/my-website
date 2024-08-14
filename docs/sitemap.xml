@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://tmieno2.github.io/my-website/cv.html</loc>
-    <lastmod>2024-08-12T18:14:22.064Z</lastmod>
+    <loc>https://tmieno2.github.io/my-website/notes.html</loc>
+    <lastmod>2024-08-12T22:35:21.812Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tmieno2.github.io/my-website/publications.html</loc>
+    <lastmod>2024-08-14T16:58:07.496Z</lastmod>
   </url>
   <url>
     <loc>https://tmieno2.github.io/my-website/blog/second-post/index.html</loc>
@@ -14,7 +18,7 @@
   </url>
   <url>
     <loc>https://tmieno2.github.io/my-website/index.html</loc>
-    <lastmod>2024-08-12T18:29:16.895Z</lastmod>
+    <lastmod>2024-08-14T17:00:42.726Z</lastmod>
   </url>
   <url>
     <loc>https://tmieno2.github.io/my-website/publications/first-post/index.html</loc>
@@ -22,15 +26,15 @@
   </url>
   <url>
     <loc>https://tmieno2.github.io/my-website/publications/index.html</loc>
-    <lastmod>2024-08-12T19:07:11.261Z</lastmod>
+    <lastmod>2024-08-14T16:59:56.875Z</lastmod>
   </url>
   <url>
     <loc>https://tmieno2.github.io/my-website/projects/index.html</loc>
-    <lastmod>2024-08-12T16:20:13.470Z</lastmod>
+    <lastmod>2024-08-14T17:00:00.285Z</lastmod>
   </url>
   <url>
     <loc>https://tmieno2.github.io/my-website/blog/index.html</loc>
-    <lastmod>2024-08-12T17:26:10.872Z</lastmod>
+    <lastmod>2024-08-12T22:43:09.706Z</lastmod>
   </url>
   <url>
     <loc>https://tmieno2.github.io/my-website/blog/first-post/index.html</loc>
@@ -39,5 +43,9 @@
   <url>
     <loc>https://tmieno2.github.io/my-website/readme.html</loc>
     <lastmod>2024-08-12T17:42:27.290Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tmieno2.github.io/my-website/cv.html</loc>
+    <lastmod>2024-08-12T18:14:22.064Z</lastmod>
   </url>
 </urlset>

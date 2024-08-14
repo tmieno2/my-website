@@ -28,18 +28,19 @@ website:
       - text: CV
         href: cv.qmd
         icon: person-gear
-    tools:
-      - icon: github
-        menu:
-          - text: Source Code
-            href:  https://github.com/tmieno2/my-website
-          - text: Report a Bug
-            href:  https://github.com/tmieno2/my-website/issues
+    # tools:
+    #   - icon: github
+    #     menu:
+    #       - text: Source Code
+    #         href:  https://github.com/tmieno2/my-website
+    #       - text: Report a Bug
+    #         href:  https://github.com/tmieno2/my-website/issues
       
 format:
   html:
     monobackgroundcolor: "#D4F0F9"
     # fontcolor: black
+    # mainfont: Poppins
     mainfont: sans-serif
     # monofont: system-ui
     fontsize: 24px

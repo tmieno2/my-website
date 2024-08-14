@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Highlighted Publications – Taro Mieno</title>
+<title>index – Taro Mieno</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -78,9 +78,10 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+      valueNames: ['listing-year','listing-title_with_link','listing-journal',{ data: ['index'] },{ data: ['categories'] }],
+      page: 20,
+    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
+      searchColumns: ["listing-title_with_link","listing-year","listing-journal"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -137,8 +138,8 @@ window.Quarto = {
 };
 </script>
 
-<meta property="og:title" content="Highlighted Publications – Taro Mieno">
-<meta property="og:image" content="https://tmieno2.github.io/my-website/publications/first-post/cover.jpg">
+<meta property="og:title" content="Taro Mieno">
+<meta property="og:description" content="">
 <meta property="og:site_name" content="Taro Mieno">
 </head>
 
@@ -182,76 +183,41 @@ window.Quarto = {
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
-    <div class="dropdown">
-      <a href="" title="" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label=""><i class="bi bi-github"></i></a>
-      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
-          <li>
-            <a class="dropdown-item quarto-navbar-tools-item" href="https://github.com/tmieno2/my-website">
-            Source Code
-            </a>
-          </li>
-          <li>
-            <a class="dropdown-item quarto-navbar-tools-item" href="https://github.com/tmieno2/my-website/issues">
-            Report a Bug
-            </a>
-          </li>
-      </ul>
-    </div>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Climate Change">Climate Change <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Water">Water <span class="quarto-category-count">(1)</span></div></div></div>
+    
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Highlighted Publications</h1>
-</div>
-
-
-
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
+<main class="content column-page" id="quarto-document-content">
 
 
 
 
+<p>This page presents all the peer-reviewed journal articles that I have authored or co-authored (sorted by year by default). For a full list of publications including books, blog posts, etc, please visit my google scholar page <a href="https://scholar.google.com/citations?user=PxS7aU0AAAAJ">here</a>.</p>
 
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+
+
+<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
 <div class="listing-actions-group">
    <div class="input-group input-group-sm quarto-listing-sort">
      <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
      <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
        <option value="" disabled="" selected="" hidden="">Order By</option>
        <option value="index" data-direction="asc">Default</option>
-         <option value="listing-title" data-direction="asc">
+         <option value="listing-title_with_link" data-direction="asc">
           Title
         </option>
-         <option value="listing-date-sort" data-direction="asc">
-          Date - Oldest
+         <option value="listing-year" data-direction="asc">
+          Year
         </option>
-         <option value="listing-date-sort" data-direction="desc">
-          Date - Newest
-        </option>
-         <option value="listing-author" data-direction="asc">
-          Author
+         <option value="listing-journal" data-direction="asc">
+          Journal
         </option>
      </select>
   </div>
@@ -260,47 +226,425 @@ window.Quarto = {
       <input type="text" class="search form-control" placeholder="Filter">
     </div>
 </div>
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="Water,Climate Change" data-listing-date-sort="1621666800000" data-listing-file-modified-sort="1723489728492" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="261">
-<div class="thumbnail">
-<p><a href="../publications/first-post/index.html" class="no-external"></a></p><a href="../publications/first-post/index.html" class="no-external">
-<p><img loading="lazy" src="../publications/first-post/cover.jpg" class="thumbnail-image"></p>
-</a><p><a href="../publications/first-post/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../publications/first-post/index.html" class="no-external">First Post</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../publications/first-post/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Water'); return false;">
-Water
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Climate Change'); return false;">
-Climate Change
-</div>
-</div>
-<div class="listing-description">
-<a href="../publications/first-post/index.html" class="no-external">Post description for first post</a>
-</div>
-</div>
-<div class="metadata">
-<a href="../publications/first-post/index.html" class="no-external">
-<div class="listing-date">
-May 22, 2021
-</div>
-<div class="listing-author">
-Alicia
-</div>
-</a>
-</div>
-</div>
-</div>
+<table class="quarto-listing-table table">
+<thead>
+<tr>
+<th>
+<a class="sort" data-sort="listing-year" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Year</a>
+</th>
+<th>
+<a class="sort" data-sort="listing-title_with_link" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Title</a>
+</th>
+<th>
+<a class="sort" data-sort="listing-journal" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Journal</a>
+</th>
+</tr>
+</thead>
+<tbody class="list">
+<tr data-index="0">
+<td>
+<span class="listing-year">2024</span>
+</td>
+<td>
+<span class="listing-title_with_link"><a href="https://www.nature.com/articles/s44221-023-00173-7">Aquifer depletion exacerbates agricultural drought losses in the US High Plains</a></span>
+</td>
+<td>
+<span class="listing-journal">Nature Water</span>
+</td>
+</tr>
+<tr data-index="1">
+<td>
+<span class="listing-year">2024</span>
+</td>
+<td>
+<span class="listing-title_with_link"><a href="https://link.springer.com/article/10.1007/s11119-024-10136-x">Can machine learning models provide accurate fertilizer recommendations?</a></span>
+</td>
+<td>
+<span class="listing-journal">Precision Agriculture</span>
+</td>
+</tr>
+<tr data-index="2">
+<td>
+<span class="listing-year">2024</span>
+</td>
+<td>
+<span class="listing-title_with_link"><a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/jaa2.102">Bias in economic evaluation of variable rate application based on geographically weighted regression models with misspecified functional form</a></span>
+</td>
+<td>
+<span class="listing-journal">Journal of the Agricultural and Applied Economics Association</span>
+</td>
+</tr>
+<tr data-index="3">
+<td>
+<span class="listing-year">2024</span>
+</td>
+<td>
+<span class="listing-title_with_link"><a href="https://www.frontiersin.org/articles/10.3389/fagro.2024.1234232/full">Leveraging digital agriculture for on-farm testing of technologies</a></span>
+</td>
+<td>
+<span class="listing-journal">Frontiers in Agronomy</span>
+</td>
+</tr>
+<tr data-index="4">
+<td>
+<span class="listing-year">2023</span>
+</td>
+<td>
+<span class="listing-title_with_link"><a href="https://link.springer.com/article/10.1007/s11119-022-09968-2">Assessing performance of empirical models for forecasting crop responses to variable fertilizer rates using on-farm precision experimentation</a></span>
+</td>
+<td>
+<span class="listing-journal">Precision Agriculture</span>
+</td>
+</tr>
+<tr data-index="5">
+<td>
+<span class="listing-year">2023</span>
+</td>
+<td>
+<span class="listing-title_with_link"><a href="https://link.springer.com/article/10.1007/s11119-023-10018-8">Predicting site-specific economic optimal nitrogen rate using machine learning methods and on-farm precision experimentation</a></span>
+</td>
+<td>
+<span class="listing-journal">Precision Agriculture</span>
+</td>
+</tr>
+<tr data-index="6">
+<td>
+<span class="listing-year">2023</span>
+</td>
+<td>
+<span class="listing-title_with_link"><a href="https://link.springer.com/article/10.1007/s11119-023-10050-8">The economic performances of different trial designs in on-farm precision experimentation: a Monte Carlo evaluation</a></span>
+</td>
+<td>
+<span class="listing-journal">Precision Agriculture</span>
+</td>
+</tr>
+<tr data-index="7">
+<td>
+<span class="listing-year">2023</span>
+</td>
+<td>
+<span class="listing-title_with_link"><a href="https://www.sciencedirect.com/science/article/pii/S240588072300016X">The gendered impacts of index-insurance on food-consumption: Evidence from southern Ethiopia</a></span>
+</td>
+<td>
+<span class="listing-journal">Climate Services</span>
+</td>
+</tr>
+<tr data-index="8">
+<td>
+<span class="listing-year">2023</span>
+</td>
+<td>
+<span class="listing-title_with_link"><a href="https://link.springer.com/article/10.1007/s11119-023-10029-5">Toward an effective approach for on-farm experimentation: Lessons learned from a case study of fertilizer application optimization in Japan</a></span>
+</td>
+<td>
+<span class="listing-journal">Precision Agriculture</span>
+</td>
+</tr>
+<tr data-index="9">
+<td>
+<span class="listing-year">2023</span>
+</td>
+<td>
+<span class="listing-title_with_link"><a href="https://brill.com/edcollchap/book/9789086869473/BP000028.xml">Synthetic data generation for validating site-specific crop yield response modelling using WOFOST and gaussian geostatistical simulations</a></span>
+</td>
+<td>
+<span class="listing-journal">Precision agriculture</span>
+</td>
+</tr>
+<tr data-index="10">
+<td>
+<span class="listing-year">2022</span>
+</td>
+<td>
+<span class="listing-title_with_link"><a href="https://www.sciencedirect.com/science/article/pii/S0168169922004811">Causal forest approach for site-specific input management via on-farm precision experimentation</a></span>
+</td>
+<td>
+<span class="listing-journal">Computers and Electronics in Agriculture</span>
+</td>
+</tr>
+<tr data-index="11">
+<td>
+<span class="listing-year">2022</span>
+</td>
+<td>
+<span class="listing-title_with_link"><a href="https://www.sciencedirect.com/science/article/pii/S2352340921010283">Simulated dataset of corn response to nitrogen over thousands of fields and multiple years in Illinois</a></span>
+</td>
+<td>
+<span class="listing-journal">Data in Brief</span>
+</td>
+</tr>
+<tr data-index="12">
+<td>
+<span class="listing-year">2022</span>
+</td>
+<td>
+<span class="listing-title_with_link"><a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/agec.12676">The potential for moral hazard behavior in irrigation decisions under crop insurance</a></span>
+</td>
+<td>
+<span class="listing-journal">Agricultural Economics</span>
+</td>
+</tr>
+<tr data-index="13">
+<td>
+<span class="listing-year">2022</span>
+</td>
+<td>
+<span class="listing-title_with_link"><a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/jaa2.33">The impact of policy design on willingness to pay for ecosystem services from prairie strips</a></span>
+</td>
+<td>
+<span class="listing-journal">Journal of the Agricultural and Applied Economics Association</span>
+</td>
+</tr>
+<tr data-index="14">
+<td>
+<span class="listing-year">2022</span>
+</td>
+<td>
+<span class="listing-title_with_link"><a href="https://link.springer.com/article/10.1007/s10640-022-00664-3">The role of search frictions and trading ratios in tradable permit markets</a></span>
+</td>
+<td>
+<span class="listing-journal">Environmental and Resource Economics</span>
+</td>
+</tr>
+<tr data-index="15">
+<td>
+<span class="listing-year">2021</span>
+</td>
+<td>
+<span class="listing-title_with_link"><a href="https://link.springer.com/article/10.1007/s13280-021-01522-0">What determines the success and failure of environmental crowdfunding?</a></span>
+</td>
+<td>
+<span class="listing-journal">Ambio</span>
+</td>
+</tr>
+<tr data-index="16">
+<td>
+<span class="listing-year">2021</span>
+</td>
+<td>
+<span class="listing-title_with_link"><a href="https://www.sciencedirect.com/science/article/pii/S0309170821001378">The effect of soil-moisture uncertainty on irrigation water use and farm profits</a></span>
+</td>
+<td>
+<span class="listing-journal">Advances in Water Resources</span>
+</td>
+</tr>
+<tr data-index="17">
+<td>
+<span class="listing-year">2021</span>
+</td>
+<td>
+<span class="listing-title_with_link"><a href="https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2020WR027941">Hydrologic‐economic trade‐offs in groundwater allocation policy design</a></span>
+</td>
+<td>
+<span class="listing-journal">Water Resources Research</span>
+</td>
+</tr>
+<tr data-index="18">
+<td>
+<span class="listing-year">2021</span>
+</td>
+<td>
+<span class="listing-title_with_link"><a href="https://www.sciencedirect.com/science/article/pii/S0308521X21002286">Understanding differences between static and dynamic nitrogen fertilizer tools using simulation modeling</a></span>
+</td>
+<td>
+<span class="listing-journal">Agricultural Systems</span>
+</td>
+</tr>
+<tr data-index="19">
+<td>
+<span class="listing-year">2021</span>
+</td>
+<td>
+<span class="listing-title_with_link"><a href="https://www.sciencedirect.com/science/article/pii/S0921800919318981">Gender, environmental issues and policy: An examination of the views of male and female economists</a></span>
+</td>
+<td>
+<span class="listing-journal">Ecological Economics</span>
+</td>
+</tr>
+<tr data-index="20">
+<td>
+<span class="listing-year">2021</span>
+</td>
+<td>
+<span class="listing-title_with_link"><a href="https://link.springer.com/article/10.1007/s11119-021-09785-z">An economic evaluation of site-specific input application Rx maps: evaluation framework and case study</a></span>
+</td>
+<td>
+<span class="listing-journal">Precision Agriculture</span>
+</td>
+</tr>
+<tr data-index="21">
+<td>
+<span class="listing-year">2021</span>
+</td>
+<td>
+<span class="listing-title_with_link"><a href="https://le.uwpress.org/content/97/3/672.short">The importance of well yield in groundwater demand specifications</a></span>
+</td>
+<td>
+<span class="listing-journal">Land Economics</span>
+</td>
+</tr>
+<tr data-index="22">
+<td>
+<span class="listing-year">2020</span>
+</td>
+<td>
+<span class="listing-title_with_link"><a href="https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2020WR028378">Satellite‐based monitoring of irrigation water use: Assessing measurement errors and their implications for agricultural water management policy</a></span>
+</td>
+<td>
+<span class="listing-journal">Water Resources Research</span>
+</td>
+</tr>
+<tr data-index="23">
+<td>
+<span class="listing-year">2020</span>
+</td>
+<td>
+<span class="listing-title_with_link"><a href="https://link.springer.com/article/10.1007/s11119-019-09706-1">The value of conducting on-farm field trials using precision agriculture technology: a theory and simulations</a></span>
+</td>
+<td>
+<span class="listing-journal">Precision Agriculture</span>
+</td>
+</tr>
+<tr data-index="24">
+<td>
+<span class="listing-year">2020</span>
+</td>
+<td>
+<span class="listing-title_with_link"><a href="https://www.sciencedirect.com/science/article/pii/S0928765518303816">Effects of instantaneous groundwater availability on irrigated agriculture and implications for aquifer management</a></span>
+</td>
+<td>
+<span class="listing-journal">Resource and Energy Economics</span>
+</td>
+</tr>
+<tr data-index="25">
+<td>
+<span class="listing-year">2020</span>
+</td>
+<td>
+<span class="listing-title_with_link"><a href="https://ageconsearch.umn.edu/record/303913/">Gold in Them Tha-R Hills: A Review of R Packages for Exploratory Data Analysis</a></span>
+</td>
+<td>
+<span class="listing-journal">Applied Economics Teaching Resources (AETR)</span>
+</td>
+</tr>
+<tr data-index="26">
+<td>
+<span class="listing-year">2019</span>
+</td>
+<td>
+<span class="listing-title_with_link"><a href="https://www.sciencedirect.com/science/article/pii/S0261517718301213">Wildlife viewing: The impact of money-back guarantees</a></span>
+</td>
+<td>
+<span class="listing-journal">Tourism Management</span>
+</td>
+</tr>
+<tr data-index="27">
+<td>
+<span class="listing-year">2019</span>
+</td>
+<td>
+<span class="listing-title_with_link"><a href="https://www.sciencedirect.com/science/article/pii/S0048969719338215">The impact of land cover on groundwater recharge in the High Plains: An application to the Conservation Reserve Program</a></span>
+</td>
+<td>
+<span class="listing-journal">Science of the Total Environment</span>
+</td>
+</tr>
+<tr data-index="28">
+<td>
+<span class="listing-year">2019</span>
+</td>
+<td>
+<span class="listing-title_with_link"><a href="https://brill.com/edcollchap/book/9789086868889/BP000116.xml">The economic value of on-farm precision experimentation</a></span>
+</td>
+<td>
+<span class="listing-journal">Precision agriculture</span>
+</td>
+</tr>
+<tr data-index="29">
+<td>
+<span class="listing-year">2018</span>
+</td>
+<td>
+<span class="listing-title_with_link"><a href="https://onlinelibrary.wiley.com/doi/abs/10.1093/ajae/aay040">Input use under crop insurance: the role of actual production history</a></span>
+</td>
+<td>
+<span class="listing-journal">American Journal of Agricultural Economics</span>
+</td>
+</tr>
+<tr data-index="30">
+<td>
+<span class="listing-year">2017</span>
+</td>
+<td>
+<span class="listing-title_with_link"><a href="https://link.springer.com/article/10.1007/s10460-017-9777-9">Which livestock production claims matter most to consumers?</a></span>
+</td>
+<td>
+<span class="listing-journal">Agriculture and Human Values</span>
+</td>
+</tr>
+<tr data-index="31">
+<td>
+<span class="listing-year">2017</span>
+</td>
+<td>
+<span class="listing-title_with_link"><a href="https://onlinelibrary.wiley.com/doi/abs/10.1093/ajae/aaw089">Price elasticity of groundwater demand: attenuation and amplification bias due to incomplete information</a></span>
+</td>
+<td>
+<span class="listing-journal">American Journal of Agricultural Economics</span>
+</td>
+</tr>
+<tr data-index="32">
+<td>
+<span class="listing-year">2016</span>
+</td>
+<td>
+<span class="listing-title_with_link"><a href="https://www.sciencedirect.com/science/article/pii/S1618866715300212">Heterogeneous preferences for social trail use in the urban forest: A latent class model</a></span>
+</td>
+<td>
+<span class="listing-journal">Urban Forestry &amp; Urban Greening</span>
+</td>
+</tr>
+<tr data-index="33">
+<td>
+<span class="listing-year">2011</span>
+</td>
+<td>
+<span class="listing-title_with_link"><a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1752-1688.2011.00536.x">Residential Demand for Water in the Chicago Metropolitan Area1</a></span>
+</td>
+<td>
+<span class="listing-journal">JAWRA Journal of the American Water Resources Association</span>
+</td>
+</tr>
+<tr data-index="34">
+<td>
+<span class="listing-year">2010</span>
+</td>
+<td>
+<span class="listing-title_with_link"><a href="https://www.sciencedirect.com/science/article/pii/S1618866710000038">How many people should be in the urban forest? A comparison of trail preferences of Vienna and Sapporo forest visitor segments</a></span>
+</td>
+<td>
+<span class="listing-journal">Urban Forestry &amp; Urban Greening</span>
+</td>
+</tr>
+<tr data-index="35">
+<td>
+<span class="listing-year">2008</span>
+</td>
+<td>
+<span class="listing-title_with_link"><a href="http://www.accessecon.com/pubs/EB/2008/Volume17/EB-08Q20005A.pdf">Providing quality recreation experiences in Japan</a></span>
+</td>
+<td>
+<span class="listing-journal">Economics Bulletin</span>
+</td>
+</tr>
+</tbody>
+</table>
 <div class="listing-no-matching d-none">
 No matching items
 </div>
+<nav id="listing-pagination" class="listing-pagination" aria-label="Page Navigation">
+  <ul class="pagination"></ul>
+</nav>
 </div><a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
