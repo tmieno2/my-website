@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Projects – Taro Mieno</title>
+<title>index – Taro Mieno</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -71,20 +71,48 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    const listingTargetEl = window.document.querySelector('#listing-r-package-cran .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
     }
 
     const options = {
-      valueNames: ['listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-title-sort'] }],
       
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
+      searchColumns: ["listing-title","listing-description"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+    window['quarto-listings']['listing-r-package-cran'] = new List('listing-r-package-cran', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-r-package-runiverse .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-title-sort'] }],
+      
+      searchColumns: ["listing-title","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-r-package-runiverse'] = new List('listing-r-package-runiverse', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -137,7 +165,7 @@ window.Quarto = {
 };
 </script>
 
-<meta property="og:title" content="Projects – Taro Mieno">
+<meta property="og:title" content="Taro Mieno">
 <meta property="og:site_name" content="Taro Mieno">
 </head>
 
@@ -164,7 +192,7 @@ window.Quarto = {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../projects/index.html" aria-current="page"> <i class="bi bi-stack" role="img">
+    <a class="nav-link" href="../projects/index.html"> <i class="bi bi-stack" role="img">
 </i> 
 <span class="menu-text">Projects</span></a>
   </li>  
@@ -179,7 +207,7 @@ window.Quarto = {
 <span class="menu-text">Teaching</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../software/index.html"> <i class="bi bi-terminal" role="img">
+    <a class="nav-link active" href="../software/index.html" aria-current="page"> <i class="bi bi-terminal" role="img">
 </i> 
 <span class="menu-text">Software</span></a>
   </li>  
@@ -203,80 +231,82 @@ window.Quarto = {
 <!-- main -->
 <main class="content column-page" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Projects</h1>
-</div>
 
 
 
-<div class="quarto-title-meta column-page">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-
-
-
-
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-2">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1723688810907" data-listing-reading-time-sort="1" data-listing-word-count-sort="84">
-<a href="../projects/precision-ag/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../projects/precision-ag/trial-design.jpg" class="thumbnail-image card-img" style="height: 250px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Data Intensive Farm Management (DIFM)
-</h5>
-<div class="card-text listing-description">
-This project runs on-farm input (e.g., fertilizer, seed) experiments across U.S. (most in Midwest) and other countries (e.g., South Africa, Argentina), analyze the data, and generate input use recommendations to the owner of the experimental fields. This project also builds cyber-infrastructure to design and conduct on-farm randomized agricultural input trials, analyze the data, and create…
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1723689283741" data-listing-reading-time-sort="1" data-listing-word-count-sort="68">
-<a href="../projects/water-economics/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../projects/water-economics/center-pivot.jpg" class="thumbnail-image card-img" style="height: 250px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Management of Groundwater for Agricultural Production
-</h5>
-<div class="card-text listing-description">
-The overarching goal of this project area is management of water (especially groundwater) for agricultural production. It covers wide area of topics including empirical analysis of the impact of drought on crop yield, theoretical investigation of optimal temporally flexible water quota designs, etc.
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-</div>
+<section id="r-packages-on-cran" class="level2">
+<h2 class="anchored" data-anchor-id="r-packages-on-cran">R packages on CRAN</h2>
+<div id="listing-r-package-cran" class="quarto-listing quarto-listing-container-table">
+<table class="quarto-listing-table table">
+<thead>
+<tr>
+<th>
+Title
+</th>
+<th>
+Description
+</th>
+</tr>
+</thead>
+<tbody class="list">
+<tr data-index="0" data-listing-title-sort="ofpetrial">
+<td>
+<a href="https://difm-brain.github.io/ofpetrial/" class="title listing-title">ofpetrial</a>
+</td>
+<td>
+<span class="listing-description">This package allows the user to design agronomic input experiments in a reproducible manner without using ArcGIS or QGIS. </span>
+</td>
+</tr>
+<tr data-index="1" data-listing-title-sort="CropScapeR">
+<td>
+<a href="https://github.com/cbw1243/CropScapeR" class="title listing-title">CropScapeR</a>
+</td>
+<td>
+<span class="listing-description">This package lets you access Cropland Data Layer (CDL) data by USDA via the CropScape Web Service </span>
+</td>
+</tr>
+</tbody>
+</table>
 <div class="listing-no-matching d-none">
 No matching items
 </div>
-</div><a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+</div>
+</section>
+<section id="r-packages-only-on-r-universe" class="level2">
+<h2 class="anchored" data-anchor-id="r-packages-only-on-r-universe">R packages only on R-universe</h2>
+<div id="listing-r-package-runiverse" class="quarto-listing quarto-listing-container-table">
+<table class="quarto-listing-table table">
+<thead>
+<tr>
+<th>
+Title
+</th>
+<th>
+Description
+</th>
+</tr>
+</thead>
+<tbody class="list">
+<tr data-index="0" data-listing-title-sort="r.spatial.workshop.datasets">
+<td>
+<a href="https://github.com/tmieno2/r.spatial.workshop.datasets" class="title listing-title">r.spatial.workshop.datasets</a>
+</td>
+<td>
+<span class="listing-description">This package curates spatial datasets that are used in <a href="https://github.com/tmieno2/R-as-GIS-workshop">an R workshop on spatial data management</a> </span>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+
+
+
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

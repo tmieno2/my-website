@@ -88,7 +88,7 @@
     "href": "index.html#education",
     "title": "Taro Mieno",
     "section": "Education",
-    "text": "Education\nUniversity of Illinois at Urbana-Champaign | Ph.D | 2009 - 2014\nUniversity of Illinois at Urbana-Champaign| MS | 2007 - 2009\nHokkaido University| BS | 2001 - 2007"
+    "text": "Education\nUniversity of Illinois at Urbana-Champaign | Ph.D | 2009 - 2014\nUniversity of Illinois at Urbana-Champaign | MS | 2007 - 2009\nHokkaido University | BS | 2001 - 2007"
   },
   {
     "objectID": "index.html#work-experience",
@@ -138,5 +138,26 @@
     "title": "Data Intensive Farm Management (DIFM)",
     "section": "",
     "text": "Overview\nThis project runs on-farm input (e.g., fertilizer, seed) experiments across U.S. (most in Midwest) and other countries (e.g., South Africa, Argentina), analyze the data, and generate input use recommendations to the owner of the experimental fields. This project also builds cyber-infrastructure to design and conduct on-farm randomized agricultural input trials, analyze the data, and create actionable input management reports.\n\n\nKey topics\n\nEconomic evaluation of various trial designs\nEvaluation of statistical methods to estimate site-specific yield response functions\nEconomic evaluation of on-farm trials\n\n\n\nRelevant Publications\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n         \n          Year\n        \n         \n          Journal\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nYear\n\n\nTitle\n\n\nJournal\n\n\n\n\n\n\n2024\n\n\nCan machine learning models provide accurate fertilizer recommendations? (Paper)\n\n\nPrecision Agriculture\n\n\n\n\n2024\n\n\nLeveraging digital agriculture for on-farm testing of technologies (Paper)\n\n\nFrontiers in Agronomy\n\n\n\n\n2023\n\n\nAssessing performance of empirical models for forecasting crop responses to variable fertilizer rates using on-farm precision experimentation (Paper)\n\n\nPrecision Agriculture\n\n\n\n\n2023\n\n\nPredicting site-specific economic optimal nitrogen rate using machine learning methods and on-farm precision experimentation (Paper)\n\n\nPrecision Agriculture\n\n\n\n\n2023\n\n\nThe economic performances of different trial designs in on-farm precision experimentation: a Monte Carlo evaluation (Paper, GitHub Repository)\n\n\nPrecision Agriculture\n\n\n\n\n2023\n\n\nToward an effective approach for on-farm experimentation: Lessons learned from a case study of fertilizer application optimization in Japan (Paper)\n\n\nPrecision Agriculture\n\n\n\n\n2022\n\n\nCausal forest approach for site-specific input management via on-farm precision experimentation (Paper, GitHub Repository)\n\n\nComputers and Electronics in Agriculture\n\n\n\n\n2021\n\n\nUnderstanding differences between static and dynamic nitrogen fertilizer tools using simulation modeling (Paper)\n\n\nAgricultural Systems\n\n\n\n\n2021\n\n\nAn economic evaluation of site-specific input application Rx maps: evaluation framework and case study (Paper)\n\n\nPrecision Agriculture\n\n\n\n\n2020\n\n\nThe value of conducting on-farm field trials using precision agriculture technology: a theory and simulations (Paper)\n\n\nPrecision Agriculture\n\n\n\n\n\nNo matching items\n\n\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "software/index.html#r-packages-only-on-r-universe",
+    "href": "software/index.html#r-packages-only-on-r-universe",
+    "title": "Taro Mieno",
+    "section": "R packages only on R-universe",
+    "text": "R packages only on R-universe\n\n\n\n\n\nTitle\n\n\nDescription\n\n\n\n\n\n\nr.spatial.workshop.datasets\n\n\nThis package curates spatial datasets that are used in an R workshop on spatial data management \n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "software/index.html",
+    "href": "software/index.html",
+    "title": "Taro Mieno",
+    "section": "",
+    "text": "Title\n\n\nDescription\n\n\n\n\n\n\nofpetrial\n\n\nThis package allows the user to design agronomic input experiments in a reproducible manner without using ArcGIS or QGIS. \n\n\n\n\nCropScapeR\n\n\nThis package lets you access Cropland Data Layer (CDL) data by USDA via the CropScape Web Service \n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "software/index.html#r-packages-on-cran",
+    "href": "software/index.html#r-packages-on-cran",
+    "title": "Taro Mieno",
+    "section": "",
+    "text": "Title\n\n\nDescription\n\n\n\n\n\n\nofpetrial\n\n\nThis package allows the user to design agronomic input experiments in a reproducible manner without using ArcGIS or QGIS. \n\n\n\n\nCropScapeR\n\n\nThis package lets you access Cropland Data Layer (CDL) data by USDA via the CropScape Web Service \n\n\n\n\n\nNo matching items"
   }
 ]

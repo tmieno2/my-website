@@ -28,6 +28,9 @@ website:
       - text: Teaching
         href: teaching/index.qmd
         icon: pencil
+      - text: Software
+        href: software/index.qmd
+        icon: terminal
       - text: CV
         href: cv.qmd
         icon: person-gear

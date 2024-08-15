@@ -1,0 +1,23 @@
+---
+listing:
+  - id: r-package-cran
+    contents: r-package-cran.yml
+    type: table
+    sort-ui: false
+    filter-ui: false
+  - id: r-package-runiverse
+    contents: r-package-runiverse.yml
+    type: table
+    sort-ui: false
+    filter-ui: false
+---
+
+## R packages on CRAN
+
+:::{#r-package-cran}
+:::
+
+## R packages on R-universe (not on CRAN)
+
+:::{#r-package-runiverse}
+:::

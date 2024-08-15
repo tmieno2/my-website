@@ -1,0 +1,4 @@
+- title: r.spatial.workshop.datasets
+  path: https://github.com/tmieno2/r.spatial.workshop.datasets
+  description: >
+    This package curates spatial datasets that are used in [an R workshop on spatial data management](https://github.com/tmieno2/R-as-GIS-workshop)

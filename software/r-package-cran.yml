@@ -1,0 +1,10 @@
+- title: ofpetrial
+  path: https://difm-brain.github.io/ofpetrial/
+  description: >
+    This package allows the user to design agronomic input experiments in a reproducible manner without using ArcGIS or QGIS.
+
+- title: CropScapeR
+  path: https://github.com/cbw1243/CropScapeR
+  description: >
+    This package lets you access Cropland Data Layer (CDL) data by USDA via the CropScape Web Service
+
