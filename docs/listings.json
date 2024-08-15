@@ -18,6 +18,7 @@
   {
     "listing": "/projects/index.html",
     "items": [
+      "/projects/biochar/index.html",
       "/projects/precision-ag/index.html",
       "/projects/water-economics/index.html"
     ]
@@ -33,6 +34,7 @@
   {
     "listing": "/about/index.html",
     "items": [
+      "/projects/biochar/index.html",
       "/projects/precision-ag/index.html",
       "/projects/water-economics/index.html"
     ]

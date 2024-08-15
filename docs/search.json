@@ -74,7 +74,7 @@
     "href": "projects/index.html",
     "title": "Projects",
     "section": "",
-    "text": "Data Intensive Farm Management (DIFM)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nManagement of Groundwater for Agricultural Production\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items\n\n Back to top"
+    "text": "Biochar and Drought Resilience in Agricultural Production\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nData Intensive Farm Management (DIFM)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nManagement of Groundwater for Agricultural Production\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items\n\n Back to top"
   },
   {
     "objectID": "publications/index.html",
@@ -102,7 +102,7 @@
     "href": "about/index.html#my-recent-professional-activities",
     "title": "Taro Mieno",
     "section": "My recent professional activities",
-    "text": "My recent professional activities\n\nPublications\n\n\n\n\n\n\n\n\n\nTitle\n\n\nAquifer depletion exacerbates agricultural drought losses in the US High Plains (Paper, GitHub Repository)\n\n\n\n\nYear\n\n\n2024\n\n\n\n\nJournal\n\n\nNature Water\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTitle\n\n\nCan machine learning models provide accurate fertilizer recommendations? (Paper)\n\n\n\n\nYear\n\n\n2024\n\n\n\n\nJournal\n\n\nPrecision Agriculture\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTitle\n\n\nBias in economic evaluation of variable rate application based on geographically weighted regression models with misspecified functional form (Paper, GitHub Repository)\n\n\n\n\nYear\n\n\n2024\n\n\n\n\nJournal\n\n\nJournal of the Agricultural and Applied Economics Association\n\n\n\n\n\n\n\n\n\nNo matching items\n\n\nSee all →\n\n\nProjects\n\n\n\n\n\n\n\n\n\n\nData Intensive Farm Management (DIFM)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nManagement of Groundwater for Agricultural Production\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items\n\n\nSee all →"
+    "text": "My recent professional activities\n\nPublications\n\n\n\n\n\n\n\n\n\nTitle\n\n\nAquifer depletion exacerbates agricultural drought losses in the US High Plains (Paper, GitHub Repository)\n\n\n\n\nYear\n\n\n2024\n\n\n\n\nJournal\n\n\nNature Water\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTitle\n\n\nCan machine learning models provide accurate fertilizer recommendations? (Paper)\n\n\n\n\nYear\n\n\n2024\n\n\n\n\nJournal\n\n\nPrecision Agriculture\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTitle\n\n\nBias in economic evaluation of variable rate application based on geographically weighted regression models with misspecified functional form (Paper, GitHub Repository)\n\n\n\n\nYear\n\n\n2024\n\n\n\n\nJournal\n\n\nJournal of the Agricultural and Applied Economics Association\n\n\n\n\n\n\n\n\n\nNo matching items\n\n\nSee all →\n\n\nProjects\n\n\n\n\n\n\n\n\n\n\nBiochar and Drought Resilience in Agricultural Production\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nData Intensive Farm Management (DIFM)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items\n\n\nSee all →"
   },
   {
     "objectID": "software/index.html",
@@ -166,5 +166,12 @@
     "title": "Taro Mieno",
     "section": "Online Books",
     "text": "Online Books\n\n\n\n\n\nTitle\n\n\nDescription\n\n\n\n\n\n\nR as GIS for Economists\n\n\nProvides guidance on how to use R for spatial data wrangling and map creation. \n\n\n\n\nReproducible Research Projects and Journal Articles with R\n\n\nProvides guidance on how to use R for reproducible research and writing journal articles using either Rmarkdown or Quarto. \n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects/biochar/index.html",
+    "href": "projects/biochar/index.html",
+    "title": "Biochar and Drought Resilience in Agricultural Production",
+    "section": "",
+    "text": "image taken by Oregon Department of Forestry\n\n\n\nOverview\nThis project conducts on-farm input experiments (e.g., fertilizer, seed) across the U.S. (primarily in the Midwest) and in other countries (e.g., South Africa, Argentina). We analyze the data and generate input use recommendations for the owners of the experimental fields. Additionally, this project develops cyber-infrastructure to design and conduct on-farm randomized agricultural input trials, analyze the data, and produce actionable input management reports.\n\n\nKey Research Topics\n\nEconomic evaluation of various trial designs\nEvaluation of statistical methods to estimate site-specific yield response functions\nEconomic evaluation of on-farm trials\n\n\n\nRelevant Publications\n\n\n\n\n\n\n\n Back to top"
   }
 ]

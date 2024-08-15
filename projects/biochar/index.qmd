@@ -1,0 +1,39 @@
+---
+title: Biochar and Drought Resilience in Agricultural Production
+path: 
+image: biochar.jpg
+# description: >
+#     This project builds cyber-infrastructure to design and conduct on-farm randomized agricultural input trials, analyze the data, and create actionable input management reports.
+# listing:
+#   - id: precision-ag-research
+#     contents: publications.yml
+#     page-size: 20
+#     sort: 'year desc'
+#     type: table
+#     categories: false
+#     fields: [year, title_with_link, journal]
+#     field-display-names:
+#       year: Year
+#       journal: Journal
+#       title_with_link: Title
+---
+
+![image taken by Oregon Department of Forestry](biochar.jpg)
+
+# Background and project overview
+
+In many parts of U.S. agricultural production is heavily reliant on irrigation. Years of massive groundwater pumping has led to severe aquifer depletion. One of the promising means to tackle this problem is biochar. Biochar is produced through a process called pyrolysis, which involves the thermal decomposition of organic material in the absence or near-absence of oxygen. Applying biochar to production fields has a number of benefits to soil health.
+
+The overarching goal of this project is to assess the impact of biochar application on the physical and chemical characteristics of soil and assess its economic viability. I am in charge of conducting economic analysis of biochar adoption and application.
+
+# Key Research Topics
+
++ Economic evaluation of biochar application: does it really pay?
++ What are the physical and chemical impacts of biochar application to fields?
+
+<!-- # Relevant Publications
+
+:::{#precision-ag-research}
+::: -->
+
+
