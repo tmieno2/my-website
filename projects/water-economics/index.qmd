@@ -24,7 +24,7 @@ listing:
 
 The overarching goal of this project area is management of water (especially groundwater) for agricultural production. It covers wide area of topics including empirical analysis of the impact of drought on crop yield, theoretical investigation of optimal temporally flexible water quota designs, etc.
 
-# Key topics
+# Key Research Topics
 
 + Water policy designs (Quota, Permit Trading)
 + Economic implications of aquifer depletion 

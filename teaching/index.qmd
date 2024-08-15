@@ -13,6 +13,11 @@ listing:
     field-display-names:
       title: Course Title
       target: Target Audience
+  - id: workshop
+    contents: workshop.yml
+    type: table
+    sort-ui: false
+    filter-ui: false
 ---
 
 
@@ -22,7 +27,12 @@ listing:
 :::{#courses}
 :::
 
-## Online Resources 
+## Online Books 
 
 :::{#resources}
+:::
+
+## Workshops
+
+:::{#workshop}
 :::

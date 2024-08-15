@@ -22,9 +22,9 @@ listing:
 
 # Overview
 
-This project runs on-farm input (e.g., fertilizer, seed) experiments across U.S. (most in Midwest) and other countries (e.g., South Africa, Argentina), analyze the data, and generate input use recommendations to the owner of the experimental fields. This project also builds cyber-infrastructure to design and conduct on-farm randomized agricultural input trials, analyze the data, and create actionable input management reports.
+This project conducts on-farm input experiments (e.g., fertilizer, seed) across the U.S. (primarily in the Midwest) and in other countries (e.g., South Africa, Argentina). We analyze the data and generate input use recommendations for the owners of the experimental fields. Additionally, this project develops cyber-infrastructure to design and conduct on-farm randomized agricultural input trials, analyze the data, and produce actionable input management reports.
 
-# Key topics
+# Key Research Topics
 
 + Economic evaluation of various trial designs
 + Evaluation of statistical methods to estimate site-specific yield response functions

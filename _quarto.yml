@@ -14,9 +14,9 @@ website:
   google-analytics: "G-XZWWMRXM72"
   navbar:
     right:
-      - text: Home
-        href: index.qmd
-        icon: house
+      - text: About
+        href: about/index.qmd
+        icon: file-earmark-person-fill
       - text: Projects
         href: projects/index.qmd
         icon: stack

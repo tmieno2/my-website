@@ -12,6 +12,10 @@
     ]
   },
   {
+    "listing": "/projects/water-economics/index.html",
+    "items": []
+  },
+  {
     "listing": "/projects/index.html",
     "items": [
       "/projects/precision-ag/index.html",
@@ -23,19 +27,22 @@
     "items": []
   },
   {
-    "listing": "/publications.html",
-    "items": []
-  },
-  {
     "listing": "/projects/precision-ag/index.html",
     "items": []
   },
   {
-    "listing": "/projects/water-economics/index.html",
-    "items": []
+    "listing": "/about/index.html",
+    "items": [
+      "/projects/precision-ag/index.html",
+      "/projects/water-economics/index.html"
+    ]
   },
   {
     "listing": "/software/index.html",
+    "items": []
+  },
+  {
+    "listing": "/publications.html",
     "items": []
   }
 ]

@@ -1,0 +1,85 @@
+---
+title: "Taro Mieno"
+subtitle: Associate Professor,<br>University of Nebraska-Lincoln
+image: headshot.jpg
+about:
+  template: trestles
+  image-width: 14em
+  image-shape: rounded
+  id: my-icons
+  links:
+    - icon: github
+      text: Github
+      href: https://github.com/tmieno2
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/taro-mieno-65a13716/
+    - icon: envelope-fill
+      text: Email
+      href: "mailto:tmieno2@unl.edu"
+listing: 
+  - id: publication
+    contents: 
+      - "../publications/publications.yml"
+    sort: year desc
+    type: grid
+    grid-columns: 1
+    categories: false
+    sort-ui: false
+    filter-ui: false
+    max-items: 3
+    image-height: "200"
+    field-display-names:
+      year: Year
+      journal: Journal
+      title_with_link: Title
+  - id: project
+    contents: 
+      - "../projects/*/index.qmd"
+    sort: date desc
+    type: grid
+    grid-columns: 2
+    categories: false
+    sort-ui: false
+    filter-ui: false
+    max-items: 2
+    image-height: "100"
+format: 
+  html: 
+    page-layout: full
+---
+
+::: {#my-icons}
+
+**Work Experience**
+
++ Associate Professor \| University of Nebraska-Lincoln \| 2020 - present
++ Assistant Professor \| University of Nebraska-Lincoln \| 2015 - 2020
+
+**Education**
+
++ Ph.D. in Agricultural and Applied Economics, University of Illinois at Urbana-Champaign, 2014
++ M.S. in Agricultural and Applied Economics, University of Illinois at Urbana-Champaign, 2009
++ B.S. in Forestry, Hokkaido University, 2007
+
+:::
+
+## 
+
+<br>
+
+## My recent professional activities
+
+### Publications
+::: {#publication}
+:::
+
+[See all &rarr;](../publications){.about-links .subtitle}
+
+### Projects
+
+::: {#project}
+:::
+[See all &rarr;](../projects){.about-links .subtitle}
+
+
