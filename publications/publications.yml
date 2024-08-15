@@ -134,10 +134,6 @@
   year: 2022
   journal: Agricultural Economics
 
-- title_with_link: "The economic value of on-farm precision experimentation ([Paper](https://brill.com/edcollchap/book/9789086868889/BP000116.xml))"
-  year: 2019
-  journal: Precision agriculture
-
 - title_with_link: "Can machine learning models provide accurate fertilizer recommendations?
   ([Paper](https://link.springer.com/article/10.1007/s11119-024-10136-x))"
   year: 2024
@@ -162,11 +158,6 @@
   [GitHub Repository](https://github.com/tmieno2/GWR_value))"
   year: 2024
   journal: Journal of the Agricultural and Applied Economics Association
-
-- title_with_link: "Synthetic data generation for validating site-specific crop yield
-  response modelling using WOFOST and gaussian geostatistical simulations ([Paper](https://brill.com/edcollchap/book/9789086869473/BP000028.xml))"
-  year: 2023
-  journal: Precision agriculture
 
 - title_with_link: "The role of search frictions and trading ratios in tradable permit
   markets ([Paper](https://link.springer.com/article/10.1007/s10640-022-00664-3))"

@@ -1,7 +1,7 @@
 ---
 title: Projects
 listing:
-  contents: projects.yml
+  contents: /
   type: grid
   max-description-length: 400
   grid-columns: 2

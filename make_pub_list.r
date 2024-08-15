@@ -74,12 +74,38 @@ attach_repo_link <- function(pub_data, repository_list) {
 
   num_link <- pub_data_copy[, sum(!is.na(repo_link))]
 
-  if (num_link < nrow(repository_list)){
+  if (num_link < nrow(repository_list)) {
     print(paste0("After the match, you have only ", num_link, "repository links in the publication data after the match, while you provided ", nrow(repository_list), "links. Take a look at the keyword variable for typos and other forms of errors."))
   }
-  
+
   return(pub_data_copy)
 }
+
+keywords <- c("Input use under", "Aquifer depletion")
+
+data <- pr_pub_data
+
+remove_papers <- function(data, keywords) {
+  if (!is.null(keywords)) {
+    drop_or_not <-
+      lapply(
+        1:length(keywords),
+        \(x) {
+          grepl(keywords[x], data[, title])
+        }
+      ) %>%
+      do.call("+", .)
+      
+    return_data <-
+      data.frame(data)[!drop_or_not, ] %>%
+      data.table()
+  } else {
+    return_data <- data
+  }
+
+  return(return_data)
+}
+
 
 #++++++++++++++++++++++++++++++++++++
 #+ Select journals
@@ -88,9 +114,12 @@ attach_repo_link <- function(pub_data, repository_list) {
 pr_journal_ls <-
   pub_data$journal %>%
   unique() %>%
-  .[!stringr::str_detect(., "CSSA|Working|Chapman|HORIZON|Japanese|OSF|tmieno|SSRN|Illinois|Cornhusker|Abstract|SocArXiv|Proceeding|Unjournal")] %>%
+  .[!stringr::str_detect(., "CSSA|Working|Chapman|HORIZON|Japanese|OSF|tmieno|SSRN|Illinois|Cornhusker|Abstract|SocArXiv|Proceeding|Unjournal|agriculture'")] %>%
   .[. != ""]
 
+#++++++++++++++++++++++++++++++++++++
+#+ Get urls of the paper
+#++++++++++++++++++++++++++++++++++++
 pub_urls <-
   lapply(
     1:nrow(pub_data),
@@ -104,33 +133,80 @@ pub_data$url <- unlist(pub_urls)
 #++++++++++++++++++++++++++++++++++++
 #+
 #++++++++++++++++++++++++++++++++++++
-pr_pub_data <-
-  pub_data[journal %in% pr_journal_ls, ] %>%
-  attach_repo_link(., repository_list) %>%
-  .[, title_with_link := ifelse(
-    !is.na(repo_link),
-    paste0(title, " ([Paper](", url, ")", ", [GitHub Repository](", repo_link, "))"),
-    paste0(title, " ([Paper](", url, "))")
-  )] %>%
-  .[, .(title_with_link, year, journal)] %>%
-  .[, year := as.character(year)] %>%
-  .[, title_with_link := paste0('"', title_with_link, '"')]
+make_pub_yml <- function(pub_data, journal_list, exclude = NULL) {
+  pr_pub_data <-
+    pub_data[journal %in% journal_list, ] %>%
+    attach_repo_link(., repository_list) %>%
+    remove_papers(., keywords = exclude) %>%
+    .[, title_with_link := ifelse(
+      !is.na(repo_link),
+      paste0(title, " ([Paper](", url, ")", ", [GitHub Repository](", repo_link, "))"),
+      paste0(title, " ([Paper](", url, "))")
+    )] %>%
+    .[, .(title_with_link, year, journal)] %>%
+    .[, year := as.character(year)] %>%
+    .[, title_with_link := paste0('"', title_with_link, '"')]
 
-pub_list_in_yaml <-
-  lapply(
-    1:nrow(pr_pub_data),
-    function(x) {
-      yaml::as.yaml(pr_pub_data[x, ])
-    }
-  ) %>%
-  unlist() %>%
-  #--- add - as an indication of the start of a paper ---#
-  gsub("title_with_link", "- title_with_link", .) %>%
-  #--- add two spaces in front ---#
-  gsub("year", "  year", .) %>%
-  #--- add two spaces in front ---#
-  gsub("journal", "  journal", .) %>%
-  gsub("url", "  url", .) %>%
-  gsub("\'", "", .)
+  pub_list_in_yaml <-
+    lapply(
+      1:nrow(pr_pub_data),
+      function(x) {
+        yaml::as.yaml(pr_pub_data[x, ])
+      }
+    ) %>%
+    unlist() %>%
+    #--- add - as an indication of the start of a paper ---#
+    gsub("title_with_link", "- title_with_link", .) %>%
+    #--- add two spaces in front ---#
+    gsub("year", "  year", .) %>%
+    #--- add two spaces in front ---#
+    gsub("journal", "  journal", .) %>%
+    gsub("url", "  url", .) %>%
+    gsub("\'", "", .)
+
+  return(pub_list_in_yaml)
+}
+
+pub_list_in_yaml <- make_pub_yml(pub_data, pr_journal_ls)
 
 writeLines(pub_list_in_yaml, "Website/publications/publications.yml")
+
+
+#++++++++++++++++++++++++++++++++++++
+#+ Precision-Ag papers
+#++++++++++++++++++++++++++++++++++++
+PA_journal_ls <-
+  c(
+    "Frontiers in Agronomy",
+    "Computers and Electronics in Agriculture",
+    "Agricultural Systems",
+    "Precision Agriculture"
+  )
+
+PA_pub_list_in_yaml <- make_pub_yml(pub_data, PA_journal_ls)
+
+writeLines(PA_pub_list_in_yaml, "Website/projects/precision-ag/publications.yml")
+
+#++++++++++++++++++++++++++++++++++++
+#+ Water management
+#++++++++++++++++++++++++++++++++++++
+WM_journal_ls <-
+  c(
+    "Water Resources Research",
+    "American Journal of Agricultural Economics",
+    "Resource and Energy Economics",
+    "Advances in Water Resources",
+    "Land Economics",
+    "Nature Water",
+    "Agricultural Economics",
+    "Environmental and Resource Economics"
+  )
+
+WM_pub_list_in_yaml <-
+  make_pub_yml(
+    pub_data = pub_data,
+    journal_list = WM_journal_ls,
+    exclude = c("Input use under")
+  )
+
+writeLines(WM_pub_list_in_yaml, "Website/projects/water-economics/publications.yml")

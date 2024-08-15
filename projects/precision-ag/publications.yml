@@ -1,0 +1,52 @@
+- title_with_link: "The value of conducting on-farm field trials using precision agriculture
+  technology: a theory and simulations ([Paper](https://link.springer.com/article/10.1007/s11119-019-09706-1))"
+  year: 2020
+  journal: Precision Agriculture
+
+- title_with_link: "Assessing performance of empirical models for forecasting crop
+  responses to variable fertilizer rates using on-farm precision experimentation ([Paper](https://link.springer.com/article/10.1007/s11119-022-09968-2))"
+  year: 2023
+  journal: Precision Agriculture
+
+- title_with_link: "Understanding differences between static and dynamic nitrogen fertilizer
+  tools using simulation modeling ([Paper](https://www.sciencedirect.com/science/article/pii/S0308521X21002286))"
+  year: 2021
+  journal: Agricultural Systems
+
+- title_with_link: "Causal forest approach for site-specific input management via on-farm
+  precision experimentation ([Paper](https://www.sciencedirect.com/science/article/pii/S0168169922004811),
+  [GitHub Repository](https://github.com/tmieno2/CF_for_VRA))"
+  year: 2022
+  journal: Computers and Electronics in Agriculture
+
+- title_with_link: "An economic evaluation of site-specific input application Rx maps:
+  evaluation framework and case study ([Paper](https://link.springer.com/article/10.1007/s11119-021-09785-z))"
+  year: 2021
+  journal: Precision Agriculture
+
+- title_with_link: "Predicting site-specific economic optimal nitrogen rate using machine
+  learning methods and on-farm precision experimentation ([Paper](https://link.springer.com/article/10.1007/s11119-023-10018-8))"
+  year: 2023
+  journal: Precision Agriculture
+
+- title_with_link: "The economic performances of different trial designs in on-farm
+  precision experimentation: a Monte Carlo evaluation ([Paper](https://link.springer.com/article/10.1007/s11119-023-10050-8),
+  [GitHub Repository](https://github.com/tmieno2/Econ_Trial_Design_PA))"
+  year: 2023
+  journal: Precision Agriculture
+
+- title_with_link: "Toward an effective approach for on-farm experimentation: Lessons
+  learned from a case study of fertilizer application optimization in Japan ([Paper](https://link.springer.com/article/10.1007/s11119-023-10029-5))"
+  year: 2023
+  journal: Precision Agriculture
+
+- title_with_link: "Can machine learning models provide accurate fertilizer recommendations?
+  ([Paper](https://link.springer.com/article/10.1007/s11119-024-10136-x))"
+  year: 2024
+  journal: Precision Agriculture
+
+- title_with_link: "Leveraging digital agriculture for on-farm testing of technologies
+  ([Paper](https://www.frontiersin.org/articles/10.3389/fagro.2024.1234232/full))"
+  year: 2024
+  journal: Frontiers in Agronomy
+

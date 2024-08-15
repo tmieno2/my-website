@@ -1,0 +1,38 @@
+---
+title: Data Intensive Farm Management (DIFM)
+path: https://publish.illinois.edu/data-intensive-farm-managment/
+image: trial-design.jpg
+# description: >
+#     This project builds cyber-infrastructure to design and conduct on-farm randomized agricultural input trials, analyze the data, and create actionable input management reports.
+listing:
+  - id: precision-ag-research
+    contents: publications.yml
+    page-size: 20
+    sort: 'year desc'
+    type: table
+    categories: false
+    fields: [year, title_with_link, journal]
+    field-display-names:
+      year: Year
+      journal: Journal
+      title_with_link: Title
+---
+
+![](trial-design.jpg)
+
+# Overview
+
+This project runs on-farm input (e.g., fertilizer, seed) experiments across U.S. (most in Midwest) and other countries (e.g., South Africa, Argentina), analyze the data, and generate input use recommendations to the owner of the experimental fields. This project also builds cyber-infrastructure to design and conduct on-farm randomized agricultural input trials, analyze the data, and create actionable input management reports.
+
+# Key topics
+
++ Economic evaluation of various trial designs
++ Evaluation of statistical methods to estimate site-specific yield response functions
++ Economic evaluation of on-farm trials
+
+# Relevant Publications
+
+:::{#precision-ag-research}
+:::
+
+
