@@ -6,9 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Post description for first post">
+<meta name="dcterms.date" content="2024-09-06">
+<meta name="description" content="This blog post provides a step-by-step guide on how to set up an R data package on R-universe to use external datasets for the webr sessions in documents created by Quarto.">
 
-<title>First Post – Taro Mieno</title>
+<title>A Minimal Introduction to Using External Datasets with webr in Quarto-generated Outputs – Taro Mieno</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,6 +21,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -78,10 +113,12 @@ gtag('config', 'G-XZWWMRXM72', { 'anonymize_ip': true});
 </script>
 
 
-<meta property="og:title" content="First Post – Taro Mieno">
-<meta property="og:description" content="Post description for first post">
-<meta property="og:image" content="https://tmieno2.github.io/my-website/blog/first-post/cover.jpg">
+<meta property="og:title" content="A Minimal Introduction to Using External Datasets with webr in Quarto-generated Outputs – Taro Mieno">
+<meta property="og:description" content="This blog post provides a step-by-step guide on how to set up an R data package on R-universe to use external datasets for the webr sessions in documents created by Quarto.">
+<meta property="og:image" content="https://tmieno2.github.io/my-website/blog/quarto-webr-setup/title-image.png">
 <meta property="og:site_name" content="Taro Mieno">
+<meta property="og:image:height" content="1538">
+<meta property="og:image:width" content="2330">
 </head>
 
 <body class="nav-fixed">
@@ -122,6 +159,11 @@ gtag('config', 'G-XZWWMRXM72', { 'anonymize_ip': true});
 <span class="menu-text">Teaching</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link" href="../../blog/index.html"> <i class="bi bi-file-post" role="img">
+</i> 
+<span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="../../software/index.html"> <i class="bi bi-terminal" role="img">
 </i> 
 <span class="menu-text">Software</span></a>
@@ -142,29 +184,49 @@ gtag('config', 'G-XZWWMRXM72', { 'anonymize_ip': true});
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul class="collapse">
+  <li><a href="#motivation-and-objectives" id="toc-motivation-and-objectives" class="nav-link active" data-scroll-target="#motivation-and-objectives"><span class="header-section-number">1</span> Motivation and Objectives</a></li>
+  <li><a href="#steps" id="toc-steps" class="nav-link" data-scroll-target="#steps"><span class="header-section-number">2</span> Steps</a>
+  <ul class="collapse">
+  <li><a href="#prepare-an-r-data-package" id="toc-prepare-an-r-data-package" class="nav-link" data-scroll-target="#prepare-an-r-data-package"><span class="header-section-number">2.1</span> Prepare an R data package</a></li>
+  <li><a href="#set-up-r-universe" id="toc-set-up-r-universe" class="nav-link" data-scroll-target="#set-up-r-universe"><span class="header-section-number">2.2</span> Set up R-universe</a></li>
+  <li><a href="#install-the-package-on-webr-sessions-inside-a-quarto-document" id="toc-install-the-package-on-webr-sessions-inside-a-quarto-document" class="nav-link" data-scroll-target="#install-the-package-on-webr-sessions-inside-a-quarto-document"><span class="header-section-number">2.3</span> Install the package on <code>webr</code> sessions inside a Quarto document</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content column-page-left" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">First Post</h1>
+<h1 class="title">A Minimal Introduction to Using External Datasets with <code>webr</code> in Quarto-generated Outputs</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">Science</div>
-    <div class="quarto-category">Technology</div>
+    <div class="quarto-category">R</div>
+    <div class="quarto-category">Quarto</div>
   </div>
   </div>
 
 <div>
   <div class="description">
-    Post description for first post
+    This blog post provides a step-by-step guide on how to set up an R data package on R-universe to use external datasets for the <code>webr</code> sessions in documents created by Quarto.
   </div>
 </div>
 
 
-<div class="quarto-title-meta column-page">
+<div class="quarto-title-meta column-page-left">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">September 6, 2024</p>
+    </div>
+  </div>
   
     
   </div>
@@ -174,13 +236,162 @@ gtag('config', 'G-XZWWMRXM72', { 'anonymize_ip': true});
 </header>
 
 
-<p>Sed risus ultricies tristique nulla aliquet. Neque volutpat ac tincidunt vitae semper quis lectus nulla.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim sed faucibus turpis in eu mi bibendum neque. Ac orci phasellus egestas tellus rutrum tellus pellentesque eu. Velit sed ullamcorper morbi tincidunt ornare massa. Sagittis id consectetur purus ut faucibus pulvinar elementum integer. Tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin libero. Lobortis feugiat vivamus at augue eget arcu. Aliquam ut porttitor leo a diam sollicitudin tempor id eu. Mauris a diam maecenas sed enim ut sem viverra aliquet. Enim ut tellus elementum sagittis vitae et leo duis. Molestie at elementum eu facilisis sed odio morbi quis commodo. Sapien pellentesque habitant morbi tristique senectus. Quam vulputate dignissim suspendisse in est. Nulla pellentesque dignissim enim sit amet venenatis urna cursus eget.</p>
-<p>Velit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum. Viverra mauris in aliquam sem fringilla ut morbi tincidunt augue. Tortor at auctor urna nunc id. Sit amet consectetur adipiscing elit duis tristique sollicitudin. Aliquet nibh praesent tristique magna sit amet purus. Tristique senectus et netus et malesuada fames ac turpis. Hac habitasse platea dictumst quisque. Auctor neque vitae tempus quam pellentesque nec nam aliquam. Ultrices tincidunt arcu non sodales neque sodales ut etiam. Iaculis at erat pellentesque adipiscing. Cras tincidunt lobortis feugiat vivamus. Nisi est sit amet facilisis magna etiam. Pharetra pharetra massa massa ultricies mi quis hendrerit. Vitae sapien pellentesque habitant morbi tristique senectus. Ornare aenean euismod elementum nisi quis eleifend quam adipiscing vitae.</p>
+<section id="motivation-and-objectives" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Motivation and Objectives</h1>
+<p><code>webr</code> allows you to run R directly in your web browser, making it particularly valuable for teaching. Instructors can demonstrate R code seamlessly within their lecture notes, eliminating the need to switch between slides and RStudio. Students can also work on exercises within the lecture slides, focusing entirely on problem-solving without concerns about having the correct R objects or packages installed on their local machines<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>.</p>
+<p>While you can use datasets that are part of an R package easily on an <code>webr</code> session, you would need to take extra steps to use external datasets like your own datasets (see <a href="https://quarto-webr.thecoatlessprofessor.com/qwebr-loading-data.html">here</a>). The goal of this blog post is to provide a step-by-step guide on how to set up R data packages on R-universe to use external datasets for the <code>webr</code> sessions in documents created by Quarto.</p>
+<div class="callout callout-style-default callout-important callout-titled" title="Target Audience">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Target Audience
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Those who would like to use your own datasets in <code>webr</code> sessions.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled" title="Pre-requisites">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Pre-requisites
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>In this blog post, I assume you are comfortable with version control with git and Github. However, no prior experience in creating an R package is necessary. Indeed, those who have never built an R package benefits the most from this blog post.</p>
+</div>
+</div>
+</section>
+<section id="steps" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Steps</h1>
+<p>Here are the major steps to take before you can use external datasets in <code>webr</code> sessions, with each of the steps consisting of smaller tasks.</p>
+<ol type="1">
+<li>Create an R data package</li>
+<li>Host the package on R-universe</li>
+<li>Install the package on <code>webr</code> sessions inside a Quarto document</li>
+</ol>
+<section id="prepare-an-r-data-package" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="prepare-an-r-data-package"><span class="header-section-number">2.1</span> Prepare an R data package</h2>
+<p>In this section, we introduce a method for creating an R dataset package—one that includes only datasets, similar to the <code>nycflights13</code> package. The aim is not to create a CRAN-approvable package but rather to develop a minimal viable R package that can be used in <code>webr</code> sessions.</p>
+<ol type="1">
+<li>Clone <a href="https://github.com/tmieno2/r-data-package-template">this repository</a> to your local computer. This repository is a modified version of the RStudio project when you initiate a new RStudio project for an R package by navigate through <strong>New Project…</strong> -&gt; <strong>New Directory</strong> -&gt; <strong>R Package</strong> on RStudio. Here are the modifications:</li>
+</ol>
+<ul>
+<li><strong>hello.R</strong> in the <strong>R</strong> folder and <strong>hello.Rd</strong> in the <strong>man</strong> are removed</li>
+<li><em>data.R</em> is added in the <strong>R</strong> folder</li>
+<li><strong>data-raw</strong> folder is created, and then <strong>gen_data.qmd</strong> and <strong>sample_data.csv</strong> are created inside it</li>
+<li><strong>dev</strong> folder is created, and then <strong>dev.qmd</strong> is created inside it</li>
+<li><code>^data-raw$</code> and <code>^dev$</code> are added to <strong>.Rbuildignore</strong></li>
+</ul>
+<ol start="2" type="1">
+<li>Open the cloned folder in RStudio, locate and open <strong>dev.qmd</strong>, and follow the instructions. These will guide you through:</li>
+</ol>
+<ul>
+<li>Creating datasets for the data package</li>
+<li>Writing descriptions for the datasets</li>
+<li>Generating documentation of the dataset</li>
+<li>Verifying that the datasets are accessible after the package is installed</li>
+</ul>
+<p>By the end, you will have a functional R data package.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>As long as you follow the instructions, you should be able to clear the CRAN check (though it is not necessary as we are not submitting this package to CRAN):</p>
+</div>
+</div>
+<ol start="3" type="1">
+<li>Create a new repository on Github for this package and push the project folder to your Github account.</li>
+</ol>
+</section>
+<section id="set-up-r-universe" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="set-up-r-universe"><span class="header-section-number">2.2</span> Set up R-universe</h2>
+<p>I basically follow the instruction provided <a href="https://docs.r-universe.dev/publish/set-up.html">here</a> to set up one’s own universe, but with some visual aids.</p>
+<ol type="1">
+<li>Create a Github repository named <code>your-username.r-unievrse.dev</code>. For me this would be <code>tmieno2.r-unievrse.dev</code> as my Github account name is <code>tmieno2</code>.</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="r-universe-dev.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></p>
+</figure>
+</div>
+<ol start="2" type="1">
+<li>Clone the repository and create a file called <strong>packages.json</strong>. Inside the file, you specify the name of the package and the url of the Github repository that hosts the package like below:</li>
+</ol>
+<div class="sourceCode" id="cb1"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>[</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  {</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    "package": "package name 1",</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    "url": "ulr of the Github repository 1"</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  },</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  {</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    "package": "package name 2",</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    "url": "ulr of the Github repository 2"</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>  },</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>In my case, it looks like below:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="package-json.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></p>
+</figure>
+</div>
+<p>I have only one package on R-universe called <strong>r.spatial.workshop.datasets</strong>, which is hosted at <strong>https://github.com/tmieno2/r.spatial.workshop.datasets.git</strong>.</p>
+<ol start="3" type="1">
+<li><p>Install the r-universe app on your Github account by clicking on <a href="https://github.com/apps/r-universe/installations/new">here</a>.</p></li>
+<li><p>Wait until your package is built and hosted at your r-universe page <strong>https://your-username.r-universe.dev</strong> (e.g., https://tmieno2.r-universe.dev for me). Click on the little green check mark next to the most recent commit message and you will see a green check mark to the r-universe icon when the package is done building like below.</p></li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="check-package.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></p>
+</figure>
+</div>
+</section>
+<section id="install-the-package-on-webr-sessions-inside-a-quarto-document" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="install-the-package-on-webr-sessions-inside-a-quarto-document"><span class="header-section-number">2.3</span> Install the package on <code>webr</code> sessions inside a Quarto document</h2>
+<p>Now that the data package is on R-universe, you can easily use it in your <code>webr</code> sessions. I am currently using <a href="https://github.com/coatless/quarto-webr">quarto-webr</a> extension (see <a href="https://github.com/coatless/quarto-webr?tab=readme-ov-file#installation">here</a> for installation and <a href="https://github.com/coatless/quarto-webr?tab=readme-ov-file#usage">here</a> for how use use it in a Quarto document).</p>
+<p>Please note that, each time a document with <code>webr</code> session is opened, a data package needs to be installed to use its datasets. This can be easily done by including a code like below at the beginning of the qmd file.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>```{webr-r}</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>#| context: setup</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>install.packages(</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  "package name", </span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  repos = "https://your-account-name.r-universe.dev"</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>data(dataset-name)</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>```</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>For example, the following code will install the <code>r.spatial.workshop.datasets</code> package and load <code>NIR</code> dataset. <code>#| context: setup</code> is used her because users do not have to see the code. But, of course, you can show the codes as well if you wish.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>```{webr-r}</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>#| context: setup</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>install.packages(</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  "r.spatial.workshop.datasets", </span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  repos = "https://tmieno2.r-universe.dev"</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>data(NIR)</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>```</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>If you want to see this in action, you can visit <a href="https://github.com/tmieno2/R-as-GIS-workshop">here</a> and you can look at lines 84-96 of <strong>L01_vector_basics.qmd</strong>.</p>
 
 
+</section>
+</section>
 
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>However, it’s important to note that having students work on their own computers offers value, as setting up their environment, including installing packages, is an essential part of the learning process.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

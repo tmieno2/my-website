@@ -28,6 +28,9 @@ website:
       - text: Teaching
         href: teaching/index.qmd
         icon: pencil
+      - text: Blog
+        href: blog/index.qmd
+        icon: file-post
       - text: Software
         href: software/index.qmd
         icon: terminal

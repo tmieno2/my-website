@@ -28,11 +28,18 @@
     "text": "Course Title\n\n\nDescription\n\n\nTarget Audience\n\n\n\n\n\n\nApplied Econometrics (MS)\n\n\nCovers simple univariate regression to panel data methods with particular emphasis on causal identification. \n\n\nUpper-level undergraduate and graduate (MS-level) students. \n\n\n\n\nData Science for Social Scientists and Agricultural and Environmental Scientists\n\n\nAims at students with no or little programming experiences. Topics covered include, R basics, Rmarkdown, data wrangling, data visualization, loop, parallel computing, making tables. \n\n\nUpper-level undergraduate and graduate students. \n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "teaching/index.html#online-resources",
-    "href": "teaching/index.html#online-resources",
+    "objectID": "teaching/index.html#online-books",
+    "href": "teaching/index.html#online-books",
     "title": "Taro Mieno",
-    "section": "Online Resources",
-    "text": "Online Resources\n\n\n\n\n\nTitle\n\n\nDescription\n\n\n\n\n\n\nR as GIS for Economists\n\n\nProvides guidance on how to use R for spatial data wrangling and map creation. \n\n\n\n\nReproducible Research Projects and Journal Articles with R\n\n\nProvides guidance on how to use R for reproducible research and writing journal articles using either Rmarkdown or Quarto. \n\n\n\n\n\nNo matching items"
+    "section": "Online Books",
+    "text": "Online Books\n\n\n\n\n\nTitle\n\n\nDescription\n\n\n\n\n\n\nR as GIS for Economists\n\n\nProvides guidance on how to use R for spatial data wrangling and map creation. \n\n\n\n\nReproducible Research Projects and Journal Articles with R\n\n\nProvides guidance on how to use R for reproducible research and writing journal articles using either Rmarkdown or Quarto. \n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "teaching/index.html#workshops",
+    "href": "teaching/index.html#workshops",
+    "title": "Taro Mieno",
+    "section": "Workshops",
+    "text": "Workshops\n\n\n\n\n\nTitle\n\n\nDescription\n\n\n\n\n\n\nR as GIS\n\n\n4-week workshop (two of two-hour lectures per week) on how to use R for spatial data wrangling and map creation. Lecture slides are available at the GitHub repository. \n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "readme.html",
@@ -42,18 +49,39 @@
     "text": "website\n\n\n\n Back to top"
   },
   {
-    "objectID": "blog/first-post/index.html",
-    "href": "blog/first-post/index.html",
-    "title": "First Post",
+    "objectID": "blog/quarto-webr-setup/index.html",
+    "href": "blog/quarto-webr-setup/index.html",
+    "title": "A Minimal Introduction to Using External Datasets with webr in Quarto-generated Outputs",
     "section": "",
-    "text": "Sed risus ultricies tristique nulla aliquet. Neque volutpat ac tincidunt vitae semper quis lectus nulla.\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim sed faucibus turpis in eu mi bibendum neque. Ac orci phasellus egestas tellus rutrum tellus pellentesque eu. Velit sed ullamcorper morbi tincidunt ornare massa. Sagittis id consectetur purus ut faucibus pulvinar elementum integer. Tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin libero. Lobortis feugiat vivamus at augue eget arcu. Aliquam ut porttitor leo a diam sollicitudin tempor id eu. Mauris a diam maecenas sed enim ut sem viverra aliquet. Enim ut tellus elementum sagittis vitae et leo duis. Molestie at elementum eu facilisis sed odio morbi quis commodo. Sapien pellentesque habitant morbi tristique senectus. Quam vulputate dignissim suspendisse in est. Nulla pellentesque dignissim enim sit amet venenatis urna cursus eget.\nVelit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum. Viverra mauris in aliquam sem fringilla ut morbi tincidunt augue. Tortor at auctor urna nunc id. Sit amet consectetur adipiscing elit duis tristique sollicitudin. Aliquet nibh praesent tristique magna sit amet purus. Tristique senectus et netus et malesuada fames ac turpis. Hac habitasse platea dictumst quisque. Auctor neque vitae tempus quam pellentesque nec nam aliquam. Ultrices tincidunt arcu non sodales neque sodales ut etiam. Iaculis at erat pellentesque adipiscing. Cras tincidunt lobortis feugiat vivamus. Nisi est sit amet facilisis magna etiam. Pharetra pharetra massa massa ultricies mi quis hendrerit. Vitae sapien pellentesque habitant morbi tristique senectus. Ornare aenean euismod elementum nisi quis eleifend quam adipiscing vitae.\n\n\n\n Back to top"
+    "text": "webr allows you to run R directly in your web browser, making it particularly valuable for teaching. Instructors can demonstrate R code seamlessly within their lecture notes, eliminating the need to switch between slides and RStudio. Students can also work on exercises within the lecture slides, focusing entirely on problem-solving without concerns about having the correct R objects or packages installed on their local machines1.\nWhile you can use datasets that are part of an R package easily on an webr session, you would need to take extra steps to use external datasets like your own datasets (see here). The goal of this blog post is to provide a step-by-step guide on how to set up R data packages on R-universe to use external datasets for the webr sessions in documents created by Quarto.\n\n\n\n\n\n\nTarget Audience\n\n\n\nThose who would like to use your own datasets in webr sessions.\n\n\n\n\n\n\n\n\nPre-requisites\n\n\n\nIn this blog post, I assume you are comfortable with version control with git and Github. However, no prior experience in creating an R package is necessary. Indeed, those who have never built an R package benefits the most from this blog post."
   },
   {
-    "objectID": "blog/index.html",
-    "href": "blog/index.html",
-    "title": "Blog",
-    "section": "",
-    "text": "First Post\n\n\n\n\n\nPost description for first post\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSecond Post\n\n\n\n\n\nPost description for second post\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThird Blog Post\n\n\n\n\n\nAn example post where the source document is a Jupyter Notebook\n\n\n\n\n\nMay 24, 2021\n\n\nAlicia\n\n\n\n\n\n\nNo matching items\n\n Back to top"
+    "objectID": "blog/quarto-webr-setup/index.html#prepare-an-r-data-package",
+    "href": "blog/quarto-webr-setup/index.html#prepare-an-r-data-package",
+    "title": "A Minimal Introduction to Using External Datasets with webr in Quarto-generated Outputs",
+    "section": "2.1 Prepare an R data package",
+    "text": "2.1 Prepare an R data package\nIn this section, we introduce a method for creating an R dataset package—one that includes only datasets, similar to the nycflights13 package. The aim is not to create a CRAN-approvable package but rather to develop a minimal viable R package that can be used in webr sessions.\n\nClone this repository to your local computer. This repository is a modified version of the RStudio project when you initiate a new RStudio project for an R package by navigate through New Project… -&gt; New Directory -&gt; R Package on RStudio. Here are the modifications:\n\n\nhello.R in the R folder and hello.Rd in the man are removed\ndata.R is added in the R folder\ndata-raw folder is created, and then gen_data.qmd and sample_data.csv are created inside it\ndev folder is created, and then dev.qmd is created inside it\n^data-raw$ and ^dev$ are added to .Rbuildignore\n\n\nOpen the cloned folder in RStudio, locate and open dev.qmd, and follow the instructions. These will guide you through:\n\n\nCreating datasets for the data package\nWriting descriptions for the datasets\nGenerating documentation of the dataset\nVerifying that the datasets are accessible after the package is installed\n\nBy the end, you will have a functional R data package.\n\n\n\n\n\n\nNote\n\n\n\nAs long as you follow the instructions, you should be able to clear the CRAN check (though it is not necessary as we are not submitting this package to CRAN):\n\n\n\nCreate a new repository on Github for this package and push the project folder to your Github account."
+  },
+  {
+    "objectID": "blog/quarto-webr-setup/index.html#set-up-r-universe",
+    "href": "blog/quarto-webr-setup/index.html#set-up-r-universe",
+    "title": "A Minimal Introduction to Using External Datasets with webr in Quarto-generated Outputs",
+    "section": "2.2 Set up R-universe",
+    "text": "2.2 Set up R-universe\nI basically follow the instruction provided here to set up one’s own universe, but with some visual aids.\n\nCreate a Github repository named your-username.r-unievrse.dev. For me this would be tmieno2.r-unievrse.dev as my Github account name is tmieno2.\n\n\n\n\n\n\n\nClone the repository and create a file called packages.json. Inside the file, you specify the name of the package and the url of the Github repository that hosts the package like below:\n\n[\n  {\n    \"package\": \"package name 1\",\n    \"url\": \"ulr of the Github repository 1\"\n  },\n  {\n    \"package\": \"package name 2\",\n    \"url\": \"ulr of the Github repository 2\"\n  },\n]\nIn my case, it looks like below:\n\n\n\n\n\nI have only one package on R-universe called r.spatial.workshop.datasets, which is hosted at https://github.com/tmieno2/r.spatial.workshop.datasets.git.\n\nInstall the r-universe app on your Github account by clicking on here.\nWait until your package is built and hosted at your r-universe page https://your-username.r-universe.dev (e.g., https://tmieno2.r-universe.dev for me). Click on the little green check mark next to the most recent commit message and you will see a green check mark to the r-universe icon when the package is done building like below."
+  },
+  {
+    "objectID": "blog/quarto-webr-setup/index.html#install-the-package-on-webr-sessions-inside-a-quarto-document",
+    "href": "blog/quarto-webr-setup/index.html#install-the-package-on-webr-sessions-inside-a-quarto-document",
+    "title": "A Minimal Introduction to Using External Datasets with webr in Quarto-generated Outputs",
+    "section": "2.3 Install the package on webr sessions inside a Quarto document",
+    "text": "2.3 Install the package on webr sessions inside a Quarto document\nNow that the data package is on R-universe, you can easily use it in your webr sessions. I am currently using quarto-webr extension (see here for installation and here for how use use it in a Quarto document).\nPlease note that, each time a document with webr session is opened, a data package needs to be installed to use its datasets. This can be easily done by including a code like below at the beginning of the qmd file.\n```{webr-r}\n#| context: setup\ninstall.packages(\n  \"package name\", \n  repos = \"https://your-account-name.r-universe.dev\"\n)\n\ndata(dataset-name)\n```\nFor example, the following code will install the r.spatial.workshop.datasets package and load NIR dataset. #| context: setup is used her because users do not have to see the code. But, of course, you can show the codes as well if you wish.\n```{webr-r}\n#| context: setup\ninstall.packages(\n  \"r.spatial.workshop.datasets\", \n  repos = \"https://tmieno2.r-universe.dev\"\n)\n\ndata(NIR)\n```\nIf you want to see this in action, you can visit here and you can look at lines 84-96 of L01_vector_basics.qmd."
+  },
+  {
+    "objectID": "blog/quarto-webr-setup/index.html#footnotes",
+    "href": "blog/quarto-webr-setup/index.html#footnotes",
+    "title": "A Minimal Introduction to Using External Datasets with webr in Quarto-generated Outputs",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nHowever, it’s important to note that having students work on their own computers offers value, as setting up their environment, including installing packages, is an essential part of the learning process.↩︎"
   },
   {
     "objectID": "index.html",
@@ -63,11 +91,25 @@
     "text": "I am an Associate Professor in the Department of Agricultural Economics at the University of Nebraska-Lincoln. My research focuses on the intersection of agricultural production and natural resource management, with a particular emphasis on water.\nMore about me →\n\n\n Back to top"
   },
   {
-    "objectID": "projects/water-economics/index.html",
-    "href": "projects/water-economics/index.html",
-    "title": "Management of Groundwater for Agricultural Production",
+    "objectID": "about/index.html",
+    "href": "about/index.html",
+    "title": "Taro Mieno",
     "section": "",
-    "text": "Overview\nThe overarching goal of this project area is management of water (especially groundwater) for agricultural production. It covers wide area of topics including empirical analysis of the impact of drought on crop yield, theoretical investigation of optimal temporally flexible water quota designs, etc.\n\n\nKey Research Topics\n\nWater policy designs (Quota, Permit Trading)\nEconomic implications of aquifer depletion\nWater pricing\nAgricultural policy (crop insurance) and water use\n\n\n\nRelated Research\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n         \n          Year\n        \n         \n          Journal\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nYear\n\n\nTitle\n\n\nJournal\n\n\n\n\n\n\n2024\n\n\nAquifer depletion exacerbates agricultural drought losses in the US High Plains (Paper, GitHub Repository)\n\n\nNature Water\n\n\n\n\n2022\n\n\nThe potential for moral hazard behavior in irrigation decisions under crop insurance (Paper)\n\n\nAgricultural Economics\n\n\n\n\n2022\n\n\nThe role of search frictions and trading ratios in tradable permit markets (Paper)\n\n\nEnvironmental and Resource Economics\n\n\n\n\n2021\n\n\nThe effect of soil-moisture uncertainty on irrigation water use and farm profits (Paper)\n\n\nAdvances in Water Resources\n\n\n\n\n2021\n\n\nHydrologic‐economic trade‐offs in groundwater allocation policy design (Paper)\n\n\nWater Resources Research\n\n\n\n\n2021\n\n\nThe importance of well yield in groundwater demand specifications (Paper)\n\n\nLand Economics\n\n\n\n\n2020\n\n\nSatellite‐based monitoring of irrigation water use: Assessing measurement errors and their implications for agricultural water management policy (Paper)\n\n\nWater Resources Research\n\n\n\n\n2020\n\n\nEffects of instantaneous groundwater availability on irrigated agriculture and implications for aquifer management (Paper)\n\n\nResource and Energy Economics\n\n\n\n\n2017\n\n\nPrice elasticity of groundwater demand: attenuation and amplification bias due to incomplete information (Paper)\n\n\nAmerican Journal of Agricultural Economics\n\n\n\n\n\nNo matching items\n\n\n\n\n\n\n\n Back to top"
+    "text": "Github\n  \n  \n    \n     LinkedIn\n  \n  \n    \n     Email\n  \n\n  \n  \nWork Experience\n\nAssociate Professor | University of Nebraska-Lincoln | 2020 - present\nAssistant Professor | University of Nebraska-Lincoln | 2015 - 2020\n\nEducation\n\nPh.D. in Agricultural and Applied Economics, University of Illinois at Urbana-Champaign, 2014\nM.S. in Agricultural and Applied Economics, University of Illinois at Urbana-Champaign, 2009\nB.S. in Forestry, Hokkaido University, 2007"
+  },
+  {
+    "objectID": "about/index.html#my-recent-professional-activities",
+    "href": "about/index.html#my-recent-professional-activities",
+    "title": "Taro Mieno",
+    "section": "My recent professional activities",
+    "text": "My recent professional activities\n\nPublications\n\n\n\n\n\n\n\n\n\nTitle\n\n\nAquifer depletion exacerbates agricultural drought losses in the US High Plains (Paper, GitHub Repository)\n\n\n\n\nYear\n\n\n2024\n\n\n\n\nJournal\n\n\nNature Water\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTitle\n\n\nCan machine learning models provide accurate fertilizer recommendations? (Paper)\n\n\n\n\nYear\n\n\n2024\n\n\n\n\nJournal\n\n\nPrecision Agriculture\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTitle\n\n\nBias in economic evaluation of variable rate application based on geographically weighted regression models with misspecified functional form (Paper, GitHub Repository)\n\n\n\n\nYear\n\n\n2024\n\n\n\n\nJournal\n\n\nJournal of the Agricultural and Applied Economics Association\n\n\n\n\n\n\n\n\n\nNo matching items\n\n\nSee all →\n\n\nProjects\n\n\n\n\n\n\n\n\n\n\nBiochar and Drought Resilience in Agricultural Production\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nData Intensive Farm Management (DIFM)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items\n\n\nSee all →"
+  },
+  {
+    "objectID": "projects/biochar/index.html",
+    "href": "projects/biochar/index.html",
+    "title": "Biochar and Drought Resilience in Agricultural Production",
+    "section": "",
+    "text": "image taken by Oregon Department of Forestry\n\n\n\nBackground and project overview\nIn many parts of U.S. agricultural production is heavily reliant on irrigation. Years of massive groundwater pumping has led to severe aquifer depletion. One of the promising means to tackle this problem is biochar. Biochar is produced through a process called pyrolysis, which involves the thermal decomposition of organic material in the absence or near-absence of oxygen. Applying biochar to production fields has a number of benefits to soil health.\nThe overarching goal of this project is to assess the impact of biochar application on the physical and chemical characteristics of soil and assess its economic viability. I am in charge of conducting economic analysis of biochar adoption and application.\n\n\nKey Research Topics\n\nEconomic evaluation of biochar application: does it really pay?\nWhat are the physical and chemical impacts of biochar application to fields?\n\n\n\n\n\n\n Back to top"
   },
   {
     "objectID": "projects/index.html",
@@ -91,18 +133,18 @@
     "text": "Overview\nThis project conducts on-farm input experiments (e.g., fertilizer, seed) across the U.S. (primarily in the Midwest) and in other countries (e.g., South Africa, Argentina). We analyze the data and generate input use recommendations for the owners of the experimental fields. Additionally, this project develops cyber-infrastructure to design and conduct on-farm randomized agricultural input trials, analyze the data, and produce actionable input management reports.\n\n\nKey Research Topics\n\nEconomic evaluation of various trial designs\nEvaluation of statistical methods to estimate site-specific yield response functions\nEconomic evaluation of on-farm trials\n\n\n\nRelevant Publications\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n         \n          Year\n        \n         \n          Journal\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nYear\n\n\nTitle\n\n\nJournal\n\n\n\n\n\n\n2024\n\n\nCan machine learning models provide accurate fertilizer recommendations? (Paper)\n\n\nPrecision Agriculture\n\n\n\n\n2024\n\n\nLeveraging digital agriculture for on-farm testing of technologies (Paper)\n\n\nFrontiers in Agronomy\n\n\n\n\n2023\n\n\nAssessing performance of empirical models for forecasting crop responses to variable fertilizer rates using on-farm precision experimentation (Paper)\n\n\nPrecision Agriculture\n\n\n\n\n2023\n\n\nPredicting site-specific economic optimal nitrogen rate using machine learning methods and on-farm precision experimentation (Paper)\n\n\nPrecision Agriculture\n\n\n\n\n2023\n\n\nThe economic performances of different trial designs in on-farm precision experimentation: a Monte Carlo evaluation (Paper, GitHub Repository)\n\n\nPrecision Agriculture\n\n\n\n\n2023\n\n\nToward an effective approach for on-farm experimentation: Lessons learned from a case study of fertilizer application optimization in Japan (Paper)\n\n\nPrecision Agriculture\n\n\n\n\n2022\n\n\nCausal forest approach for site-specific input management via on-farm precision experimentation (Paper, GitHub Repository)\n\n\nComputers and Electronics in Agriculture\n\n\n\n\n2021\n\n\nUnderstanding differences between static and dynamic nitrogen fertilizer tools using simulation modeling (Paper)\n\n\nAgricultural Systems\n\n\n\n\n2021\n\n\nAn economic evaluation of site-specific input application Rx maps: evaluation framework and case study (Paper)\n\n\nPrecision Agriculture\n\n\n\n\n2020\n\n\nThe value of conducting on-farm field trials using precision agriculture technology: a theory and simulations (Paper)\n\n\nPrecision Agriculture\n\n\n\n\n\nNo matching items\n\n\n\n\n\n\n\n Back to top"
   },
   {
-    "objectID": "about/index.html",
-    "href": "about/index.html",
-    "title": "Taro Mieno",
+    "objectID": "projects/water-economics/index.html",
+    "href": "projects/water-economics/index.html",
+    "title": "Management of Groundwater for Agricultural Production",
     "section": "",
-    "text": "Github\n  \n  \n    \n     LinkedIn\n  \n  \n    \n     Email\n  \n\n  \n  \nWork Experience\n\nAssociate Professor | University of Nebraska-Lincoln | 2020 - present\nAssistant Professor | University of Nebraska-Lincoln | 2015 - 2020\n\nEducation\n\nPh.D. in Agricultural and Applied Economics, University of Illinois at Urbana-Champaign, 2014\nM.S. in Agricultural and Applied Economics, University of Illinois at Urbana-Champaign, 2009\nB.S. in Forestry, Hokkaido University, 2007"
+    "text": "Overview\nThe overarching goal of this project area is management of water (especially groundwater) for agricultural production. It covers wide area of topics including empirical analysis of the impact of drought on crop yield, theoretical investigation of optimal temporally flexible water quota designs, etc.\n\n\nKey Research Topics\n\nWater policy designs (Quota, Permit Trading)\nEconomic implications of aquifer depletion\nWater pricing\nAgricultural policy (crop insurance) and water use\n\n\n\nRelated Research\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n         \n          Year\n        \n         \n          Journal\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nYear\n\n\nTitle\n\n\nJournal\n\n\n\n\n\n\n2024\n\n\nAquifer depletion exacerbates agricultural drought losses in the US High Plains (Paper, GitHub Repository)\n\n\nNature Water\n\n\n\n\n2022\n\n\nThe potential for moral hazard behavior in irrigation decisions under crop insurance (Paper)\n\n\nAgricultural Economics\n\n\n\n\n2022\n\n\nThe role of search frictions and trading ratios in tradable permit markets (Paper)\n\n\nEnvironmental and Resource Economics\n\n\n\n\n2021\n\n\nThe effect of soil-moisture uncertainty on irrigation water use and farm profits (Paper)\n\n\nAdvances in Water Resources\n\n\n\n\n2021\n\n\nHydrologic‐economic trade‐offs in groundwater allocation policy design (Paper)\n\n\nWater Resources Research\n\n\n\n\n2021\n\n\nThe importance of well yield in groundwater demand specifications (Paper)\n\n\nLand Economics\n\n\n\n\n2020\n\n\nSatellite‐based monitoring of irrigation water use: Assessing measurement errors and their implications for agricultural water management policy (Paper)\n\n\nWater Resources Research\n\n\n\n\n2020\n\n\nEffects of instantaneous groundwater availability on irrigated agriculture and implications for aquifer management (Paper)\n\n\nResource and Energy Economics\n\n\n\n\n2017\n\n\nPrice elasticity of groundwater demand: attenuation and amplification bias due to incomplete information (Paper)\n\n\nAmerican Journal of Agricultural Economics\n\n\n\n\n\nNo matching items\n\n\n\n\n\n\n\n Back to top"
   },
   {
-    "objectID": "about/index.html#my-recent-professional-activities",
-    "href": "about/index.html#my-recent-professional-activities",
+    "objectID": "todo.html",
+    "href": "todo.html",
     "title": "Taro Mieno",
-    "section": "My recent professional activities",
-    "text": "My recent professional activities\n\nPublications\n\n\n\n\n\n\n\n\n\nTitle\n\n\nAquifer depletion exacerbates agricultural drought losses in the US High Plains (Paper, GitHub Repository)\n\n\n\n\nYear\n\n\n2024\n\n\n\n\nJournal\n\n\nNature Water\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTitle\n\n\nCan machine learning models provide accurate fertilizer recommendations? (Paper)\n\n\n\n\nYear\n\n\n2024\n\n\n\n\nJournal\n\n\nPrecision Agriculture\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTitle\n\n\nBias in economic evaluation of variable rate application based on geographically weighted regression models with misspecified functional form (Paper, GitHub Repository)\n\n\n\n\nYear\n\n\n2024\n\n\n\n\nJournal\n\n\nJournal of the Agricultural and Applied Economics Association\n\n\n\n\n\n\n\n\n\nNo matching items\n\n\nSee all →\n\n\nProjects\n\n\n\n\n\n\n\n\n\n\nBiochar and Drought Resilience in Agricultural Production\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nData Intensive Farm Management (DIFM)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items\n\n\nSee all →"
+    "section": "",
+    "text": "list of working papers (yml or rmd?)\ncv with quarto?\ntypst with quarto\n\n\n\n\n Back to top"
   },
   {
     "objectID": "software/index.html",
@@ -126,18 +168,11 @@
     "text": "R packages on R-universe (not on CRAN)\n\n\n\n\n\nTitle\n\n\nDescription\n\n\n\n\n\n\nr.spatial.workshop.datasets\n\n\nThis package curates spatial datasets that are used in an R workshop on spatial data management \n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "blog/third-post/index.html",
-    "href": "blog/third-post/index.html",
-    "title": "Third Blog Post",
+    "objectID": "blog/index.html",
+    "href": "blog/index.html",
+    "title": "Blog",
     "section": "",
-    "text": "The source for any page in your website could also be a Jupyter Notebook. This one is third-post/index.ipynb.\nHere’s an example I borrowed from the Seaborn docs:\n\nimport seaborn as sns\n\nsns.set_theme(style=\"whitegrid\")\n\n# Load the diamonds dataset\ndiamonds = sns.load_dataset(\"diamonds\")\n\n# Plot the distribution of clarity ratings, conditional on carat\nsns.displot(\n    data=diamonds,\n    x=\"carat\", hue=\"cut\",\n    kind=\"kde\", height=4, aspect=1.5,\n    multiple=\"fill\", clip=(0, None),\n    palette=\"ch:rot=-.25,hue=1,light=.75\",   \n)\n\n\n\n\n\n\n\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "blog/second-post/index.html",
-    "href": "blog/second-post/index.html",
-    "title": "Second Post",
-    "section": "",
-    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis imperdiet massa tincidunt nunc pulvinar sapien et ligula. Amet cursus sit amet dictum sit amet. Eget duis at tellus at urna condimentum. Convallis aenean et tortor at risus viverra. Tincidunt ornare massa eget egestas purus viverra accumsan. Et malesuada fames ac turpis egestas. At imperdiet dui accumsan sit amet. Ut ornare lectus sit amet est placerat. Enim nulla aliquet porttitor lacus luctus accumsan tortor posuere. Duis ultricies lacus sed turpis tincidunt id aliquet risus. Mattis enim ut tellus elementum sagittis. Dui id ornare arcu odio ut. Natoque penatibus et magnis dis. Libero justo laoreet sit amet cursus sit. Sed faucibus turpis in eu. Tempus iaculis urna id volutpat lacus laoreet.\nPhasellus vestibulum lorem sed risus. Eget felis eget nunc lobortis mattis. Sit amet aliquam id diam maecenas ultricies. Egestas maecenas pharetra convallis posuere morbi. Etiam erat velit scelerisque in dictum non consectetur a erat. Cras fermentum odio eu feugiat pretium nibh ipsum consequat. Viverra accumsan in nisl nisi scelerisque. Et netus et malesuada fames ac. Amet tellus cras adipiscing enim eu turpis egestas pretium aenean. Eget lorem dolor sed viverra ipsum nunc aliquet. Ultrices dui sapien eget mi proin sed libero enim sed. Ultricies mi eget mauris pharetra et ultrices neque. Ipsum suspendisse ultrices gravida dictum. A arcu cursus vitae congue mauris rhoncus aenean vel. Gravida arcu ac tortor dignissim convallis. Nulla posuere sollicitudin aliquam ultrices.\n\n\n\n Back to top"
+    "text": "A Minimal Introduction to Using External Datasets with webr in Quarto-generated Outputs\n\n\n\n\n\nThis blog post provides a step-by-step guide on how to set up an R data package on R-universe to use external datasets for the webr sessions in documents created by Quarto.\n\n\n\n\n\nSep 6, 2024\n\n\n\n\n\n\nNo matching items\n\n Back to top"
   },
   {
     "objectID": "publications.html",
@@ -152,26 +187,5 @@
     "title": "Taro Mieno",
     "section": "",
     "text": "It appears you don't have a PDF plugin for this browser.\n    No biggie... you can click here to\n    download the PDF file.\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "teaching/index.html#workshops",
-    "href": "teaching/index.html#workshops",
-    "title": "Taro Mieno",
-    "section": "Workshops",
-    "text": "Workshops\n\n\n\n\n\nTitle\n\n\nDescription\n\n\n\n\n\n\nR as GIS\n\n\n4-week workshop (two of two-hour lectures per week) on how to use R for spatial data wrangling and map creation. Lecture slides are available at the GitHub repository. \n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "teaching/index.html#online-books",
-    "href": "teaching/index.html#online-books",
-    "title": "Taro Mieno",
-    "section": "Online Books",
-    "text": "Online Books\n\n\n\n\n\nTitle\n\n\nDescription\n\n\n\n\n\n\nR as GIS for Economists\n\n\nProvides guidance on how to use R for spatial data wrangling and map creation. \n\n\n\n\nReproducible Research Projects and Journal Articles with R\n\n\nProvides guidance on how to use R for reproducible research and writing journal articles using either Rmarkdown or Quarto. \n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "projects/biochar/index.html",
-    "href": "projects/biochar/index.html",
-    "title": "Biochar and Drought Resilience in Agricultural Production",
-    "section": "",
-    "text": "image taken by Oregon Department of Forestry\n\n\n\nOverview\nThis project conducts on-farm input experiments (e.g., fertilizer, seed) across the U.S. (primarily in the Midwest) and in other countries (e.g., South Africa, Argentina). We analyze the data and generate input use recommendations for the owners of the experimental fields. Additionally, this project develops cyber-infrastructure to design and conduct on-farm randomized agricultural input trials, analyze the data, and produce actionable input management reports.\n\n\nKey Research Topics\n\nEconomic evaluation of various trial designs\nEvaluation of statistical methods to estimate site-specific yield response functions\nEconomic evaluation of on-farm trials\n\n\n\nRelevant Publications\n\n\n\n\n\n\n\n Back to top"
   }
 ]

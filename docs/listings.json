@@ -4,16 +4,12 @@
     "items": []
   },
   {
-    "listing": "/blog/index.html",
+    "listing": "/about/index.html",
     "items": [
-      "/blog/first-post/index.html",
-      "/blog/second-post/index.html",
-      "/blog/third-post/index.html"
+      "/projects/biochar/index.html",
+      "/projects/precision-ag/index.html",
+      "/projects/water-economics/index.html"
     ]
-  },
-  {
-    "listing": "/projects/water-economics/index.html",
-    "items": []
   },
   {
     "listing": "/projects/index.html",
@@ -32,16 +28,18 @@
     "items": []
   },
   {
-    "listing": "/about/index.html",
-    "items": [
-      "/projects/biochar/index.html",
-      "/projects/precision-ag/index.html",
-      "/projects/water-economics/index.html"
-    ]
+    "listing": "/projects/water-economics/index.html",
+    "items": []
   },
   {
     "listing": "/software/index.html",
     "items": []
+  },
+  {
+    "listing": "/blog/index.html",
+    "items": [
+      "/blog/quarto-webr-setup/index.html"
+    ]
   },
   {
     "listing": "/publications.html",

@@ -4,5 +4,4 @@ listing:
   contents: /
   sort: "date desc"
   type: default
-  categories: false
 ---
