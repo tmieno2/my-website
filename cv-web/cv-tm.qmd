@@ -1,0 +1,326 @@
+---
+title: "Taro Mieno"
+format:
+  html:
+    toc: true
+  # typst: default
+---
+
+```{r}
+#| include: false
+library(dplyr)
+library(data.table)
+library(flextable)
+library(officer)
+```
+
+::: {.columns}
+
+::: {.column width="50%"}
+Agricultural Economics\
+University of Nebraska-Lincoln\
+Filley Hall\
+Lincoln, NE 68516
+:::
+<!--end of the 1st column-->
+::: {.column width="50%"}
+[Email: tmieno2@unl.edu](mailto: tmieno2@unl.edu)\
+[Website](https://tmieno2.github.io/my-website/)
+:::
+<!--end of the 2nd column-->
+:::
+<!--end of the columns-->
+
+### Professional Experience
+
+Associate Professor, University of Nebraska-Lincoln (2021 - present)\
+Assistant Professor, University of Nebraska-Lincoln (2015-2021)\
+Postdoctoral Fellow, Luc Hoffmann Institute (2014--2015)\
+Postdoctoral Research Associate, University of Minnesota (2014--2015)
+
+---
+
+### Education
+
+**Ph.D., Agricultural and Applied Economics**, University of Illinois at Urbana-Champaign (2014)\
+**M.S., Agricultural Economics**, University of Illinois at Urbana-Champaign (2009)\
+**B.S., Forestry**, Hokkaido University (2007)
+
+---
+
+### Research Fields
+
+Environmental and Resource Economics\
+Applied Econometrics\
+Precision Agriculture\
+Agricultural Economics\
+Production Economics
+
+---
+
+### Journal Articles (Peer-reviewed )
+
+```{r}
+#| output: asis
+#| echo: false
+#|
+mybib <- RefManageR::ReadBib("data/publications.bib")
+
+RefManageR::BibOptions(sorting = "ydnt")
+
+mybib
+```
+
+---
+
+### Other Publications
+
+```{r}
+#| output: asis
+#| echo: false
+other_pub_data <-
+  jsonlite::fromJSON("data/other_publications.json") %>%
+  # jsonlite::fromJSON("CV/other_publications.json") %>%
+  data.table() %>%
+  .[, other_pub_txt := paste0(item, ", ", media)]
+
+categories <- unique(other_pub_data$category)
+
+for (i in categories) {
+  w_data <- other_pub_data[category == i, ]
+  cat(paste0("**", i, "**\\\n\n"))
+  cat(w_data[, paste0("- ", other_pub_txt)] %>% paste0(collapse = "\\\n"))
+  cat("\n\n")
+}
+
+# paste0(collapse = "\\\n")
+# cat()
+```
+
+
+---
+
+### Teaching
+
+```{r}
+#| output: asis
+#| echo: false
+teaching_data <-
+  jsonlite::fromJSON("data/teaching_experience.json") %>%
+  # jsonlite::fromJSON("CV/teaching_experience.json") %>%
+  data.table() %>%
+  .[, course_txt := paste0(role, ": ", course, " ", semester)]
+
+categories <- unique(teaching_data$category)
+
+for (i in categories) {
+  w_data <- teaching_data[category == i, ]
+  cat(paste0("**", i, "**\\\n\n"))
+  cat(w_data[, paste0("- ", course_txt)] %>% paste0(collapse = "\\\n"))
+  cat("\n\n")
+}
+
+# paste0(collapse = "\\\n")
+# cat()
+```
+
+---
+
+### Presentations
+
+```{r}
+#| output: asis
+#| echo: false
+jsonlite::fromJSON("data/presentations.json") %>%
+  # jsonlite::fromJSON("CV/data/referee_journals.json") %>%
+  data.table() %>%
+  .[, paste0('+ \"', title, '\" at **', conf_name, "** (", year, ")")] %>%
+  paste0(collapse = "\\\n") %>%
+  cat()
+```
+
+
+---
+
+### Invited Talks
+
+```{r}
+#| output: asis
+#| echo: false
+jsonlite::fromJSON("data/invited_talks.json") %>%
+  # jsonlite::fromJSON("CV/invited_talks.json") %>%
+  data.table() %>%
+  .[, paste0('- \"', title, '\" at **', inst, "** (", year, ")")] %>%
+  paste0(collapse = "\\\n") %>%
+  cat()
+```
+
+---
+
+### External Grants
+
+```{r}
+#| output: asis
+#| echo: false
+jsonlite::fromJSON("data/external_grants.json") %>%
+  # jsonlite::fromJSON("CV/external_grants.json") %>%
+  data.table() %>%
+  .[, paste0('- \"', title, '\", **', funder, "**, ", role, ", ", period, ", ", amount)] %>%
+  paste0(collapse = "\\\n") %>%
+  cat()
+```
+
+---
+
+### Awards and Fellowships
+
+```{r}
+#| output: asis
+#| echo: false
+af_data <-
+  jsonlite::fromJSON("data/awards_fellowship.json") %>%
+  # jsonlite::fromJSON("CV/awards_fellowship.json") %>%
+  data.table()
+
+(
+  af_list <-
+    af_data %>%
+    .[, paste0("- **", title, "**, ", inst, " (", year, ")")] %>%
+    paste0(collapse = "\\\n") %>%
+    cat()
+)
+
+```
+
+---
+
+### Referee Services
+
+```{r}
+#| include: false
+referee_service_data <-
+  jsonlite::fromJSON("data/referee_services.json") %>%
+  # jsonlite::fromJSON("CV/data/referee_journals.json") %>%
+  data.table()
+```
+
+**Journals**
+
+```{r}
+#| output: asis
+#| echo: false
+referee_service_data %>%
+  dplyr::filter(category == "journal") %>%
+  .[, .(year_num_list = paste0(year, "(", num, ")", collapse = ", ")), by = name] %>%
+  .[, paste0("+ **", name, "**: ", year_num_list)] %>%
+  paste0(collapse = "\\\n") %>%
+  cat()
+```
+
+
+**Grant/Program**
+
+```{r}
+#| output: asis
+#| echo: false
+referee_service_data %>%
+  dplyr::filter(category == "grant") %>%
+  .[, paste0("+ ", name, ": ", year)] %>%
+  paste0(collapse = "\\\n") %>%
+  cat()
+```
+
+**Conference Abstract**
+
+```{r}
+#| output: asis
+#| echo: false
+referee_service_data %>%
+  dplyr::filter(category == "conf-abstract") %>%
+  .[, paste0("+ ", name, ": ", year)] %>%
+  paste0(collapse = "\\\n") %>%
+  cat()
+```
+
+
+---
+
+### Professional Services
+
+```{r}
+#| include: false
+professional_service_data <-
+  jsonlite::fromJSON("data/professional_services.json") %>%
+  # jsonlite::fromJSON("CV/data/referee_journals.json") %>%
+  data.table()
+```
+
+**Editorship**
+
+```{r}
+#| output: asis
+#| echo: false
+professional_service_data %>%
+  dplyr::filter(category == "editor") %>%
+  .[, paste0("+ ", name, ": ", year)] %>%
+  paste0(collapse = "\\\n") %>%
+  cat()
+```
+
+**University of Nebraska-Lincoln**
+
+```{r}
+#| output: asis
+#| echo: false
+professional_service_data %>%
+  dplyr::filter(category == "unl") %>%
+  .[, paste0("+ ", name, ": ", year)] %>%
+  paste0(collapse = "\\\n") %>%
+  cat()
+```
+
+---
+
+### Mentorship (Graduate Students/Postdocs)
+
+```{r}
+#| include: false
+students_service_data <-
+  jsonlite::fromJSON("data/students.json") %>%
+  # jsonlite::fromJSON("CV/data/referee_journals.json") %>%
+  data.table() %>%
+  .[, type := factor(type, levels = c("Ph.D.", "MSc", "Postdoc"))] %>%
+  .[order(type, year_grad), ]
+
+num_lines <- nrow(students_service_data)
+```
+
+```{r}
+#| echo: false
+flextable::flextable(students_service_data) %>%
+  flextable::set_header_labels(
+    values = list(
+      name = "Name",
+      inst = "Institution",
+      year_grad = "Year of \n Graduation",
+      role = "My role",
+      type = "Degree",
+      job = "Immediate \nPlacement"
+    )
+  ) %>%
+  flextable::autofit() %>%
+  hline(
+    i = 1:(num_lines - 1),
+    border = fp_border(
+      color = "grey",
+      width = 1
+    )
+  ) %>%
+  footnote(
+    i = 1,
+    j = 2,
+    part = "header",
+    value = as_paragraph("UNL: University of Nebraska-Lincoln, UIUC: University of Illinois at Urbana-Champaign"),
+    ref_symbols = "++"
+  )
+```

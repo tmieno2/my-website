@@ -1,13 +1,13 @@
 - title: Applied Econometrics (MS)
-  path: https://github.com/tmieno2/MS-Applied-Econometrics
+  path: https://tmieno2.github.io/Applied-Econometrics-MS-Quarto/
   description: >
     Covers simple univariate regression to panel data methods with particular emphasis on causal identification. 
   target: > 
     Upper-level undergraduate and graduate (MS-level) students. 
 
 - title: Data Science for Social Scientists and Agricultural and Environmental Scientists
-  path: https://github.com/tmieno2/AECN-Data-Science-R
+  path: https://tmieno2.github.io/Data-Science-with-R-Quarto/
   description: >
-    Aims at students with no or little programming experiences. Topics covered include, R basics, Rmarkdown, data wrangling, data visualization, loop, parallel computing, making tables.
+    Aims at students with no or little programming experiences. Topics covered include, R basics, Quarto, data wrangling, data visualization, loop, parallel computing, making tables.
   target: > 
     Upper-level undergraduate and graduate students. 

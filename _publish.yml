@@ -1,0 +1,4 @@
+- source: project
+  quarto-pub:
+    - id: ac8dde80-cf88-43da-99e7-53ee133fe51d
+      url: 'https://taro-mieno-pf.quarto.pub/taro-mieno'

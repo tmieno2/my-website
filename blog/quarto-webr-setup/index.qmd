@@ -12,6 +12,7 @@ format:
 categories:
   - R
   - Quarto
+  - webr
 ---
 
 # Motivation and Objectives

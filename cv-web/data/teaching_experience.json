@@ -1,0 +1,56 @@
+[
+  {
+    "category": "University of Nebraska Lincoln (graduate)",
+    "role": "Primary Instructor",
+    "course": "Applied Econometrics",
+    "semester": "(Fall, 2016-2023)"
+  },
+  {
+    "category": "University of Nebraska Lincoln (graduate)",
+    "role": "Primary Instructor",
+    "course": "Data Science with R for Social, Agricultural, and Environmental Scientists",
+    "semester": "(Fall, 2020-2023)"
+  },
+  {
+    "category": "University of Nebraska Lincoln (graduate)",
+    "role": "Primary Instructor",
+    "course": "Geospatial Analysis using R",
+    "semester": "(Spring, 2020)"
+  },
+  {
+    "category": "University of Nebraska Lincoln (undergraduate)",
+    "role": "Primary Instructor",
+    "course": "Natural Resource and Environmental Economics",
+    "semester": "(Spring, 2016-2019)"
+  },
+  {
+    "category": "University of Illinois at Urbana-Champaign (Ph.D)",
+    "role": "Secondary Instructor",
+    "course": "Economic Statistics",
+    "semester": "(Fall 2011, Fall 2012, Fall 2013)"
+  },
+  {
+    "category": "University of Illinois at Urbana-Champaign (Ph.D)",
+    "role": "Secondary Instructor",
+    "course": "Econometric Analysis",
+    "semester": "(Spring 2012, Spring 2013, Spring 2014)"
+  },
+  {
+    "category": "University of Illinois at Urbana-Champaign (undergraduate)",
+    "role": "Teaching Assistant",
+    "course": "Spreadsheet Models and Applications",
+    "semester": "(Spring 2013)"
+  },
+  {
+    "category": "University of Illinois at Urbana-Champaign (undergraduate)",
+    "role": "Teaching Assistant",
+    "course": "Contemporary Issues in ACES",
+    "semester": "(Fall 2013)"
+  },
+  {
+    "category": "University of Illinois at Urbana-Champaign (undergraduate)",
+    "role": "Teaching Assistant",
+    "course": "Environment and Development",
+    "semester": "(Spring 2014)"
+  }
+]

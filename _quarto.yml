@@ -35,7 +35,7 @@ website:
         href: software/index.qmd
         icon: terminal
       - text: CV
-        href: cv.qmd
+        href: cv-web/cv-tm.qmd
         icon: person-gear
     # tools:
     #   - icon: github
@@ -52,7 +52,7 @@ format:
     # mainfont: Poppins
     mainfont: sans-serif
     # monofont: system-ui
-    fontsize: 24px
+    fontsize: 20px
     # linestretch: # space between lines
     # max-width:
     page-layout: full

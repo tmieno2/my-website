@@ -1,0 +1,67 @@
+[
+  {
+    "category": "Extension Reports",
+    "item": "[On-farm Research Results (2015-2023)](https://cropwatch.unl.edu/farmresearch/farm-research-result-publications)",
+    "media": ""
+  },
+  {
+    "category": "Books",
+    "item": "[R as GIS for Economists](https://tmieno2.github.io/R-as-GIS-for-Economists/)",
+    "media": ""
+  },
+  {
+    "category": "Books",
+    "item": "[Introduction to Machine Learning for Economists](https://tmieno2.github.io/ML-Economist/)",
+    "media": ""
+  },
+  {
+    "category": "Books",
+    "item": "[Reproducible Research with R](https://tmieno2.github.io/WritingJournalArticleRmarkdown/)",
+    "media": ""
+  },
+  {
+    "category": "Software",
+    "item": "Mieno, T. and Edge, B. [ofpetrial: Design on-Farm Precision Field Agronomic Trials](https://difm-brain.github.io/ofpetrial/), R package version 0.1.1",
+    "media": ""
+  },
+  {
+    "category": "Blog Posts",
+    "item": "[Sneak peek - groundwater policy research in progress](https://waterforfood.nebraska.edu/news-and-events/news/2023/11/sneak-peek---groundwater-policy-research-in-progress)",
+    "media": "DWFI blog"
+  },
+  {
+    "category": "Blog Posts",
+    "item": "[The Impact of Policy Design on Willingness to Pay For Ecosystem Services from Prairie Strips](https://agecon.unl.edu/impact-policy-design-willingness-pay-ecosystem-services-prairie-strips)",
+    "media": "Cornhusker Economics"
+  },
+  {
+    "category": "Blog Posts",
+    "item": "[The Value of Soil Sampling and Sampling Density: Conceptual Framework (Part 1)](https://agecon.unl.edu/cornhusker-economics/2020/value-soil-sampling-and-sampling-density-conceptual-framework-part-1)",
+    "media": "Cornhusker Economics"
+  },
+  {
+    "category": "Blog Posts",
+    "item": "The Impact of Different Data Processing Methods on Site-specific Management Recommendation",
+    "media": "Cornhusker Economics"
+  },
+  {
+    "category": "Blog Posts",
+    "item": "[Economics of Experimental Design: Finding the Optimal Design of a Whole Field Randomized Experiment](https://agecon.unl.edu/cornhusker-economics/2018/experimental-design-economics)",
+    "media": "Cornhusker Economics"
+  },
+  {
+    "category": "Blog Posts",
+    "item": "[The Economic Evaluation of Input Use Prescription Maps: Are You Paying to Make Less Profit?](https://cropwatch.unl.edu/2019/economic-evaluation-input-use-prescription-maps-are-you-paying-make-less-profit)",
+    "media": "Cornhusker Economics"
+  },
+  {
+    "category": "Blog Posts",
+    "item": "[Getting to Know Your Yield Response Better through Whole-field Randomized Experiments](https://agecon.unl.edu/cornhusker-economics/2017/yield-response-whole-field-randomized-experiments)",
+    "media": "Cornhusker Economics"
+  },
+  {
+    "category": "Blog Posts",
+    "item": "[Precision agriculture adoption and profitability](https://agecon.unl.edu/cornhusker-economics/2017/precision-agriculture-adoption-profitability)",
+    "media": "Cornhusker Economics"
+  }
+]
