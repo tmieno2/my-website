@@ -24,7 +24,7 @@ Lincoln, NE 68516
 :::
 <!--end of the 1st column-->
 ::: {.column width="50%"}
-[Email: tmieno2@unl.edu](mailto: tmieno2@unl.edu)\
+[Email: tmieno2@nebraska.edu](mailto: tmieno2@nebraska.edu)\
 [Website](https://tmieno2.github.io/my-website/)
 :::
 <!--end of the 2nd column-->
@@ -65,6 +65,7 @@ Production Economics
 #| echo: false
 #|
 mybib <- RefManageR::ReadBib("data/publications.bib")
+# mybib <- RefManageR::ReadBib(here::here("Website/cv-web/data/publications.bib"))
 
 RefManageR::BibOptions(sorting = "ydnt")
 
@@ -163,11 +164,17 @@ jsonlite::fromJSON("data/invited_talks.json") %>%
 #| output: asis
 #| echo: false
 jsonlite::fromJSON("data/external_grants.json") %>%
-  # jsonlite::fromJSON("CV/external_grants.json") %>%
+  # jsonlite::fromJSON("cv-web/data/external_grants.json") %>%
   data.table() %>%
   .[, paste0('- \"', title, '\", **', funder, "**, ", role, ", ", period, ", ", amount)] %>%
   paste0(collapse = "\\\n") %>%
   cat()
+
+total_amount <- 
+  jsonlite::fromJSON("data/external_grants.json") %>%
+  data.table() %>%
+  .[, amount := gsub("\\$","",amount) %>% gsub(",", "", .) %>% as.numeric()] %>%
+  .[, sum(amount)]
 ```
 
 ---

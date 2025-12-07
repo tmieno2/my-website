@@ -1,7 +1,6 @@
 ---
 title: "Taro Mieno"
 subtitle: "Associate Professor"
-# `profile.jpg` photo by Jan Tinneberg on https://unsplash.com
 image: headshot.jpg
 about: # https://quarto.org/docs/websites/website-about.html
   template: solana
@@ -15,7 +14,7 @@ about: # https://quarto.org/docs/websites/website-about.html
       href: https://www.linkedin.com/in/taro-mieno-65a13716/
     - icon: envelope-fill
       text: Email
-      href: "mailto:tmieno2@unl.edu"
+      href: "mailto:tmieno2@nebraska.edu"
 ---
 
 I am an Associate Professor in the Department of Agricultural Economics at the University of Nebraska-Lincoln. My research focuses on the intersection of agricultural production and natural resource management, with a particular emphasis on water.

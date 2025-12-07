@@ -5,6 +5,7 @@
     "year": 2016,
     "num": 3
   },
+  
   {
     "category": "journal",
     "name": "American Journal of Agricultural Economics",
@@ -49,6 +50,12 @@
   },
   {
     "category": "journal",
+    "name": "American Journal of Agricultural Economics",
+    "year": 2024,
+    "num": 3
+  },
+  {
+    "category": "journal",
     "name": "Journal of the Agricultural and Applied Economics Association",
     "year": 2019,
     "num": 1
@@ -75,6 +82,12 @@
     "category": "journal",
     "name": "Journal of the Agricultural and Applied Economics Association",
     "year": 2023,
+    "num": 1
+  },
+  {
+    "category": "journal",
+    "name": "Journal of the Agricultural and Applied Economics Association",
+    "year": 2024,
     "num": 1
   },
   {
@@ -111,6 +124,12 @@
     "category": "journal",
     "name": "Precision Agriculture",
     "year": 2023,
+    "num": 1
+  },
+  {
+    "category": "journal",
+    "name": "Precision Agriculture",
+    "year": 2024,
     "num": 1
   },
   {
@@ -163,6 +182,12 @@
   },
   {
     "category": "journal",
+    "name": "Communications Earth & Environment",
+    "year": 2024,
+    "num": 1
+  },
+  {
+    "category": "journal",
     "name": "Computers and Electronics in Agriculture",
     "year": 2021,
     "num": 1
@@ -171,6 +196,12 @@
     "category": "journal",
     "name": "Applied Economics Perspective and Policy",
     "year": 2020,
+    "num": 1
+  },
+  {
+    "category": "journal",
+    "name": "Applied Economics Teaching Resources",
+    "year": 2024,
     "num": 1
   },
   {
@@ -226,6 +257,17 @@
     "name": "Land Economics",
     "year": 2016,
     "num": 1
+  },
+  {
+    "category": "journal",
+    "name": "Environment Research Letters",
+    "year": 2024,
+    "num": 1
+  },
+  {
+    "category": "book",
+    "name": "Springer",
+    "year": 2024
   },
   {
     "category": "grant",

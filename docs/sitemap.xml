@@ -1,71 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://tmieno2.github.io/my-website/notes.html</loc>
-    <lastmod>2024-08-12T22:35:21.812Z</lastmod>
-  </url>
-  <url>
     <loc>https://tmieno2.github.io/my-website/teaching/index.html</loc>
-    <lastmod>2024-08-15T15:18:51.651Z</lastmod>
-  </url>
-  <url>
-    <loc>https://tmieno2.github.io/my-website/readme.html</loc>
-    <lastmod>2024-08-12T17:42:27.290Z</lastmod>
-  </url>
-  <url>
-    <loc>https://tmieno2.github.io/my-website/blog/quarto-webr-setup/index.html</loc>
-    <lastmod>2024-09-07T14:53:33.100Z</lastmod>
-  </url>
-  <url>
-    <loc>https://tmieno2.github.io/my-website/index.html</loc>
-    <lastmod>2024-08-15T18:01:21.469Z</lastmod>
-  </url>
-  <url>
-    <loc>https://tmieno2.github.io/my-website/about/index.html</loc>
-    <lastmod>2024-08-15T15:07:31.010Z</lastmod>
-  </url>
-  <url>
-    <loc>https://tmieno2.github.io/my-website/projects/biochar/index.html</loc>
-    <lastmod>2024-08-15T18:21:24.862Z</lastmod>
-  </url>
-  <url>
-    <loc>https://tmieno2.github.io/my-website/projects/index.html</loc>
-    <lastmod>2024-08-15T00:59:21.620Z</lastmod>
-  </url>
-  <url>
-    <loc>https://tmieno2.github.io/my-website/cv-web/cv-tm.html</loc>
-    <lastmod>2024-11-04T21:07:40.450Z</lastmod>
+    <lastmod>2024-08-15T15:18:51.000Z</lastmod>
   </url>
   <url>
     <loc>https://tmieno2.github.io/my-website/publications/index.html</loc>
-    <lastmod>2024-08-15T03:07:11.096Z</lastmod>
-  </url>
-  <url>
-    <loc>https://tmieno2.github.io/my-website/projects/precision-ag/index.html</loc>
-    <lastmod>2024-08-15T12:55:08.482Z</lastmod>
+    <lastmod>2024-08-15T03:07:06.000Z</lastmod>
   </url>
   <url>
     <loc>https://tmieno2.github.io/my-website/projects/water-economics/index.html</loc>
-    <lastmod>2024-08-15T13:06:57.479Z</lastmod>
+    <lastmod>2024-08-15T12:55:29.000Z</lastmod>
   </url>
   <url>
-    <loc>https://tmieno2.github.io/my-website/todo.html</loc>
-    <lastmod>2024-08-15T18:37:08.637Z</lastmod>
+    <loc>https://tmieno2.github.io/my-website/projects/index.html</loc>
+    <lastmod>2024-08-15T00:59:21.000Z</lastmod>
   </url>
   <url>
-    <loc>https://tmieno2.github.io/my-website/software/index.html</loc>
-    <lastmod>2024-08-15T02:56:00.444Z</lastmod>
+    <loc>https://tmieno2.github.io/my-website/index.html</loc>
+    <lastmod>2025-12-07T17:06:01.953Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tmieno2.github.io/my-website/cv-web/cv-tm.html</loc>
+    <lastmod>2025-12-07T16:28:56.792Z</lastmod>
   </url>
   <url>
     <loc>https://tmieno2.github.io/my-website/blog/index.html</loc>
     <lastmod>2024-09-03T16:12:23.000Z</lastmod>
   </url>
   <url>
-    <loc>https://tmieno2.github.io/my-website/publications.html</loc>
-    <lastmod>2024-08-14T17:02:55.383Z</lastmod>
+    <loc>https://tmieno2.github.io/my-website/about/index.html</loc>
+    <lastmod>2025-12-07T17:10:01.735Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tmieno2.github.io/my-website/blog/quarto-webr-setup/index.html</loc>
+    <lastmod>2024-09-07T01:13:09.000Z</lastmod>
   </url>
   <url>
     <loc>https://tmieno2.github.io/my-website/cv.html</loc>
-    <lastmod>2024-08-12T18:14:22.064Z</lastmod>
+    <lastmod>2024-08-12T18:14:17.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tmieno2.github.io/my-website/projects/biochar/index.html</loc>
+    <lastmod>2024-08-15T18:21:24.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tmieno2.github.io/my-website/projects/precision-ag/index.html</loc>
+    <lastmod>2024-08-15T12:55:08.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tmieno2.github.io/my-website/publications.html</loc>
+    <lastmod>2024-08-14T17:02:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://tmieno2.github.io/my-website/software/index.html</loc>
+    <lastmod>2024-08-15T02:56:00.000Z</lastmod>
   </url>
 </urlset>

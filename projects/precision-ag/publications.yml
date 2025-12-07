@@ -8,10 +8,20 @@
   year: 2023
   journal: Precision Agriculture
 
+- title_with_link: "Predicting site-specific economic optimal nitrogen rate using machine
+  learning methods and on-farm precision experimentation ([Paper](https://link.springer.com/article/10.1007/s11119-023-10018-8))"
+  year: 2023
+  journal: Precision Agriculture
+
 - title_with_link: "Understanding differences between static and dynamic nitrogen fertilizer
   tools using simulation modeling ([Paper](https://www.sciencedirect.com/science/article/pii/S0308521X21002286))"
   year: 2021
   journal: Agricultural Systems
+
+- title_with_link: "Can machine learning models provide accurate fertilizer recommendations?
+  ([Paper](https://link.springer.com/article/10.1007/s11119-024-10136-x))"
+  year: 2024
+  journal: Precision Agriculture
 
 - title_with_link: "Causal forest approach for site-specific input management via on-farm
   precision experimentation ([Paper](https://www.sciencedirect.com/science/article/pii/S0168169922004811),
@@ -19,13 +29,8 @@
   year: 2022
   journal: Computers and Electronics in Agriculture
 
-- title_with_link: "An economic evaluation of site-specific input application Rx maps:
-  evaluation framework and case study ([Paper](https://link.springer.com/article/10.1007/s11119-021-09785-z))"
-  year: 2021
-  journal: Precision Agriculture
-
-- title_with_link: "Predicting site-specific economic optimal nitrogen rate using machine
-  learning methods and on-farm precision experimentation ([Paper](https://link.springer.com/article/10.1007/s11119-023-10018-8))"
+- title_with_link: "Toward an effective approach for on-farm experimentation: lessons
+  learned from a case study of fertilizer application optimization in Japan ([Paper](https://link.springer.com/article/10.1007/s11119-023-10029-5))"
   year: 2023
   journal: Precision Agriculture
 
@@ -35,18 +40,23 @@
   year: 2023
   journal: Precision Agriculture
 
-- title_with_link: "Toward an effective approach for on-farm experimentation: Lessons
-  learned from a case study of fertilizer application optimization in Japan ([Paper](https://link.springer.com/article/10.1007/s11119-023-10029-5))"
-  year: 2023
-  journal: Precision Agriculture
-
-- title_with_link: "Can machine learning models provide accurate fertilizer recommendations?
-  ([Paper](https://link.springer.com/article/10.1007/s11119-024-10136-x))"
-  year: 2024
+- title_with_link: "An economic evaluation of site-specific input application Rx maps:
+  evaluation framework and case study ([Paper](https://link.springer.com/article/10.1007/s11119-021-09785-z))"
+  year: 2021
   journal: Precision Agriculture
 
 - title_with_link: "Leveraging digital agriculture for on-farm testing of technologies
-  ([Paper](https://www.frontiersin.org/articles/10.3389/fagro.2024.1234232/full))"
+  ([Paper](https://www.frontiersin.org/  journals/agronomy/articles/10.3389/fagro.2024.1234232/full))"
   year: 2024
+  journal: Frontiers in Agronomy
+
+- title_with_link: "Quadratic-plateau geographically weighted regression model for
+  estimating site-specific economically optimal input rates ([Paper](https://www.sciencedirect.com/science/article/pii/S0168169925007616))"
+  year: 2025
+  journal: Computers and Electronics in Agriculture
+
+- title_with_link: "Site-specific drivers of sensor-based nitrogen management in on-farm
+  corn and wheat experiments ([Paper](https://www.frontiersin.org/  journals/agronomy/articles/10.3389/fagro.2025.1651522/abstract))"
+  year: 2025
   journal: Frontiers in Agronomy
 

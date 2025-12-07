@@ -1,15 +1,21 @@
 [
   {
+    "category": "University of Nebraska Lincoln (micro-credit)",
+    "role": "Primary Instructor",
+    "course": "Spatial Data Handling & Map Creation Using R",
+    "semester": "Summer, 2024"
+  },
+  {
     "category": "University of Nebraska Lincoln (graduate)",
     "role": "Primary Instructor",
     "course": "Applied Econometrics",
-    "semester": "(Fall, 2016-2023)"
+    "semester": "(Fall, 2016-2024)"
   },
   {
     "category": "University of Nebraska Lincoln (graduate)",
     "role": "Primary Instructor",
     "course": "Data Science with R for Social, Agricultural, and Environmental Scientists",
-    "semester": "(Fall, 2020-2023)"
+    "semester": "(Fall, 2020-2024)"
   },
   {
     "category": "University of Nebraska Lincoln (graduate)",

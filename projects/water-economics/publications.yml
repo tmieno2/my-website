@@ -8,25 +8,15 @@
   year: 2017
   journal: American Journal of Agricultural Economics
 
-- title_with_link: "Effects of instantaneous groundwater availability on irrigated
-  agriculture and implications for aquifer management ([Paper](https://www.sciencedirect.com/science/article/pii/S0928765518303816))"
-  year: 2020
-  journal: Resource and Energy Economics
-
 - title_with_link: "The effect of soil-moisture uncertainty on irrigation water use
   and farm profits ([Paper](https://www.sciencedirect.com/science/article/pii/S0309170821001378))"
   year: 2021
   journal: Advances in Water Resources
 
-- title_with_link: "Hydrologic‐economic trade‐offs in groundwater allocation policy
-  design ([Paper](https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2020WR027941))"
-  year: 2021
-  journal: Water Resources Research
-
-- title_with_link: "The importance of well yield in groundwater demand specifications
-  ([Paper](https://le.uwpress.org/content/97/3/672.short))"
-  year: 2021
-  journal: Land Economics
+- title_with_link: "Effects of instantaneous groundwater availability on irrigated
+  agriculture and implications for aquifer management ([Paper](https://www.sciencedirect.com/science/article/pii/S0928765518303816))"
+  year: 2020
+  journal: Resource and Energy Economics
 
 - title_with_link: "Aquifer depletion exacerbates agricultural drought losses in the
   US High Plains ([Paper](https://www.nature.com/articles/s44221-023-00173-7), [GitHub
@@ -34,10 +24,20 @@
   year: 2024
   journal: Nature Water
 
+- title_with_link: "Hydrologic‐economic trade‐offs in groundwater allocation policy
+  design ([Paper](https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2020WR027941))"
+  year: 2021
+  journal: Water Resources Research
+
 - title_with_link: "The potential for moral hazard behavior in irrigation decisions
   under crop insurance ([Paper](https://onlinelibrary.wiley.com/doi/abs/10.1111/agec.12676))"
   year: 2022
   journal: Agricultural Economics
+
+- title_with_link: "The importance of well yield in groundwater demand specifications
+  ([Paper](https://le.uwpress.org/content/97/3/672.short))"
+  year: 2021
+  journal: Land Economics
 
 - title_with_link: "The role of search frictions and trading ratios in tradable permit
   markets ([Paper](https://link.springer.com/article/10.1007/s10640-022-00664-3))"

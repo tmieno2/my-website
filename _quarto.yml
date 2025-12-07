@@ -1,6 +1,9 @@
 project:
   type: website
   output-dir: docs
+  render:
+    - "*.qmd"
+    - "!cv-web/make_pub_list.qmd"
 
 website:
   title: "Taro Mieno"

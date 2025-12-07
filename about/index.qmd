@@ -16,7 +16,7 @@ about:
       href: https://www.linkedin.com/in/taro-mieno-65a13716/
     - icon: envelope-fill
       text: Email
-      href: "mailto:tmieno2@unl.edu"
+      href: "mailto:tmieno2@nebraska.edu"
 listing: 
   - id: publication
     contents: 
@@ -74,12 +74,12 @@ format:
 ::: {#publication}
 :::
 
-[See all &rarr;](../publications){.about-links .subtitle}
+[See all &rarr;](/publications){.about-links .subtitle}
 
 ### Projects
 
 ::: {#project}
 :::
-[See all &rarr;](../projects){.about-links .subtitle}
+[See all &rarr;](/projects){.about-links .subtitle}
 
 
